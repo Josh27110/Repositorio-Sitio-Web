@@ -1,6 +1,19 @@
-h1 {
-  background-color: red;
-  color: forestgreen;
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumb Sans", sans-serif;
+}
+
+.main-container {
+  border: 1px solid red;
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

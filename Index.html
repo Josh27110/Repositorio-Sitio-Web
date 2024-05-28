@@ -5,12 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- HOLA DE ESTILOS -->
     <link rel="stylesheet" href="styles.css">
-    <title>Sitio_Web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>e-commerce</title>
 </head>
 <body>
-    
-</body>
-<footer>
+    <main class="main-container">
+        <header class="header">
+            <i class="bi bi-list header__list-icon"></i>
+            <h1>Tienda X</h1>
+            <nav class="navbar">
+                <ul class="navbar__items">
+                    <li><a href="#" class="navbar__link">Inicio</a></li>
+                    <li><a href="#" class="navbar__link">Colección</a></li>
+                    <li><a href="#" class="navbar__link">Contacto</a></li>
+                    <li><a href="#" class="navbar__link">Carrito</a></li>
+                </ul>
+            </nav>
 
-</footer>
+            <!-- inicio obscuro -->
+            <div class="modal-navbar__background">
+                <nav class="navbar">
+                    <i class="bi bi-x modal-navbar__close.icon"></i>
+                    <ul class="navbar__items">
+                        <li><a href="#" class="modal-navbar__link">Inicio</a></li>
+                        <li><a href="#" class="modal-navbar__link">Colección</a></li>
+                        <li><a href="#" class="modal-navbar__link">Contacto</a></li>
+                        <li><a href="#" class="modal-navbar__link">Carrito</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- fin obscuro -->
+
+            <div class="header__cart-avatar">
+                <i class="bi bi-brightness-high"></i>
+                <img src="./img/avatar.png" alt="avatar" class="header__avatar-icon">
+            </div>
+        </header>
+    </main>
+</body>
 </html>
