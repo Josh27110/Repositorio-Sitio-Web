@@ -1,0 +1,38 @@
+@use 'variables' as v;
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+}
+
+.product {
+    height: 4rem;
+    width: 95%;
+    background-color: v.$whiteish;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    &__description{
+        // border: 1px solid green;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        &-details{
+            text-decoration: none;
+        }
+    }
+    &__img{
+        height: 50px;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    &__value{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+}

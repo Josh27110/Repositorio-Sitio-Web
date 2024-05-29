@@ -8,6 +8,7 @@
   align-items: center;
   color: #DEE2E6;
   background-color: #7209B7;
+  margin-bottom: 0.5rem;
 }
 .header__logo {
   display: flex;
@@ -74,7 +75,7 @@
   padding: 1.5rem 1.2rem;
 }
 .modal-navbar__background {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: gba(0, 0, 0, 0.5) r;
   position: absolute;
   top: 0;
   left: 0;
@@ -101,6 +102,66 @@
   font-size: 1.2rem;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.product {
+  height: 4rem;
+  width: 95%;
+  background-color: #DEE2E6;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.product__description {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.product__description-details {
+  text-decoration: none;
+}
+.product__img {
+  height: 50px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.product__value {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  background-color: #9255bb;
+  width: 80%;
+  border-radius: 1rem;
+  padding: 10px;
+  color: #DEE2E6;
+  font-size: 0.8rem;
+}
+.total__saldo, .total__price {
+  float: inline-end;
+}
+.total__checkout {
+  background-color: #C77DFF;
+  border: 0;
+  border-radius: 5px;
+  height: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -114,6 +175,7 @@ body {
 .main-container {
   border: 1px solid black;
   width: 20rem;
+  height: 100vh;
   margin: auto;
   border-radius: 0.5rem;
   position: relative;
