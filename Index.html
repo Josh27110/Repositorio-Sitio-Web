@@ -11,8 +11,11 @@
 <body>
     <main class="main-container">
         <header class="header">
-            <i class="bi bi-list header__list-icon"></i>
-            <h1>Tienda X</h1>
+            <div class="header__logo">
+                <i class="bi bi-arrow-left header__logo__list-icon"></i>
+                <h1 class="header__logo__title">Tienda X</h1>
+            </div>
+
             <nav class="navbar">
                 <ul class="navbar__items">
                     <li><a href="#" class="navbar__link">Inicio</a></li>
@@ -24,9 +27,9 @@
 
             <!-- inicio obscuro -->
             <div class="modal-navbar__background">
-                <nav class="navbar">
-                    <i class="bi bi-x modal-navbar__close.icon"></i>
-                    <ul class="navbar__items">
+                <nav class="modal-navbar">
+                    <i class="bi bi-x modal-navbar__close-icon"></i>
+                    <ul class="modal-navbar__items">
                         <li><a href="#" class="modal-navbar__link">Inicio</a></li>
                         <li><a href="#" class="modal-navbar__link">Colección</a></li>
                         <li><a href="#" class="modal-navbar__link">Contacto</a></li>
@@ -37,10 +40,55 @@
             <!-- fin obscuro -->
 
             <div class="header__cart-avatar">
-                <i class="bi bi-brightness-high"></i>
-                <img src="./img/avatar.png" alt="avatar" class="header__avatar-icon">
+                <i class="bi bi-brightness-high header__cart-avatar__i"></i>
+                <img src="./img/avatar.png" alt="avatar" class="header__cart-avatar__icon">
             </div>
         </header>
+
+        <section class="content">
+            <div class="saldo">
+                <h2>Carrito de compras</h2>
+                <p>Saldo: <span class="saldo__actual">$10000</span></p>
+            </div>
+            <div class="product">
+                <div class="product__description">
+                    <img src="./img/telefono.jpg" alt="producto" class="product__img">
+                    <p class="product__description-details">Telefono celular</p>
+                </div>
+                <div class="product__value">
+                    <p class="product__price">$120,00</p>
+                    <i class="bi bi-x modal-navbar__close-icon"></i>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__description">
+                    <img src="./img/telefono.jpg" alt="producto" class="product__img">
+                    <p class="product__description-details">Telefono celular</p>
+                </div>
+                <div class="product__value">
+                    <p class="product__price">$120,00</p>
+                    <i class="bi bi-x modal-navbar__close-icon"></i>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__description">
+                    <img src="./img/telefono.jpg" alt="producto" class="product__img">
+                    <p class="product__description-details">Telefono celular</p>
+                </div>
+                <div class="product__value">
+                    <p class="product__price">$120.00</p>
+                    <i class="bi bi-x modal-navbar__close-icon"></i>
+                </div>
+            </div>
+            <div class="total">
+                <p class="total__final-price">Total</p>
+                <p class="total__price">$560.00</p>
+            </div>
+            <span class="checkout">
+                <p>Checkout</p>
+            </span>
+        </section>
+
     </main>
 </body>
 </html>

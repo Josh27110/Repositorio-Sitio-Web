@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@use 'variables' as v;
+@use 'header';
+@use 'modal_navbar';
+@use 'navbar_background';
+
 
 * {
     margin: 0;
@@ -7,14 +11,18 @@
 }
 
 body {
-    font-family: 'Kumb Sans', sans-serif;
+    font-family: v.$font;
 }
 
 .main-container {
-    border: 1px solid red;
-    width: 80vw;
-    height: 100vh;
+    border: 1px solid black;
+    width: 20rem;
     margin: auto;
-    
+    border-radius: .5rem;
+    position: relative;
+    @media (min-width: 1000px){
+        width: 90%;
+        border-radius: 0;
+    }
 }
 

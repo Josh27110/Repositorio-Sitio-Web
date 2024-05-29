@@ -1,0 +1,50 @@
+@use 'variables' as v;
+@use 'mixins';
+
+.header {
+    @include mixins.radio;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    color: v.$whiteish;
+    background-color: v.$purpleful;
+    &__logo{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        @media (min-width: 1000px){
+            justify-content: flex-start;
+            gap: 3rem;
+        }
+        &__list-icon{
+            font-size: 1.2rem;
+            margin-left: 2rem;
+        }
+        &__title{
+            font-size: 1.3rem;
+        }
+    }
+    &__cart-avatar{
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        @media (min-width: 1000px){
+            justify-content: flex-end;
+            gap: 3rem;
+        }
+        &__i{
+            font-size: 1.2rem;
+        }
+        &__icon{
+            width: 1.5rem;
+            margin-right: 2rem;
+        }
+    }
+    @media (min-width: 1000px){
+        border-radius: 0;
+    }
+}
+
+
+
