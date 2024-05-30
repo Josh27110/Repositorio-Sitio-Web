@@ -5,10 +5,31 @@
     flex-direction: column;
     gap: .5rem;
     align-items: center;
+    padding: .5rem;
+    @media (min-width:1000px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
+
+.product-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    @media (min-width: 1000px){
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 1rem;
+    }
 }
 
 .product {
-    height: 4rem;
+    padding: 0 1rem;
+    height: 4.5rem;
     width: 95%;
     background-color: v.$whiteish;
     border-radius: 10px;
@@ -16,10 +37,10 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     &__description{
-        // border: 1px solid green;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        gap: 1rem;
         &-details{
             text-decoration: none;
         }
@@ -34,5 +55,12 @@
         align-items: center;
         justify-content: space-evenly;
     }
-    
+    &__close-icon:hover{
+        cursor: pointer;
+    }
+    @media (min-width: 1000px){
+        width: 90%;
+        height: 4rem;
+    }
 }
+

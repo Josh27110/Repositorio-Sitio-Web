@@ -21,6 +21,9 @@
         &__list-icon{
             font-size: 1.2rem;
             margin-left: 2rem;
+            &:hover{
+                cursor: pointer;
+            }
         }
         &__title{
             font-size: 1.3rem;
@@ -28,14 +31,18 @@
     }
     &__cart-avatar{
         width: 30%;
+        gap: 2rem;
         display: flex;
         justify-content: space-around;
         @media (min-width: 1000px){
             justify-content: flex-end;
-            gap: 3rem;
+            gap: 2.5rem;
         }
         &__i{
             font-size: 1.2rem;
+            &:hover{
+                cursor: pointer;
+            }
         }
         &__icon{
             width: 1.5rem;
