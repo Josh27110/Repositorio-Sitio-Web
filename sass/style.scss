@@ -1,0 +1,30 @@
+@use 'variables' as v;
+@use 'header';
+@use 'modal_navbar';
+@use 'navbar_background';
+@use 'content';
+@use 'check';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: v.$font;
+}
+
+.main-container {
+    // border: 1px solid black;
+    width: 20rem;
+    height: 100vh;
+    margin: auto;
+    border-radius: .5rem;
+    position: relative;
+    @media (min-width: 1000px){
+        width: 90%;
+        border-radius: 0;
+    }
+}
+
