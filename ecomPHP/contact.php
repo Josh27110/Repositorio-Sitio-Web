@@ -55,20 +55,20 @@ if(isset($_POST['form_contact']))
     if(empty($_POST['visitor_name']))
     {
         $valid = 0;
-        $error_message .= 'Please enter your name.\n';
+        $error_message .= 'Por favor, escriba su nombre.\n';
     }
 
     if(empty($_POST['visitor_phone']))
     {
         $valid = 0;
-        $error_message .= 'Please enter your phone number.\n';
+        $error_message .= 'Por favor, introduzca su número de teléfono.\n';
     }
 
 
     if(empty($_POST['visitor_email']))
     {
         $valid = 0;
-        $error_message .= 'Please enter your email address.\n';
+        $error_message .= 'Por favor, introduzca su dirección de correo electrónico.\n';
     }
     else
     {
@@ -76,14 +76,14 @@ if(isset($_POST['form_contact']))
         if(!filter_var($_POST['visitor_email'], FILTER_VALIDATE_EMAIL))
         {
             $valid = 0;
-            $error_message .= 'Please enter a valid email address.\n';
+            $error_message .= 'Por favor, introduce una dirección de correo electrónico válida.\n';
         }
     }
 
     if(empty($_POST['visitor_message']))
     {
         $valid = 0;
-        $error_message .= 'Please enter your message.\n';
+        $error_message .= 'Por favor ingrese su mensaje.\n';
     }
 
     if($valid == 1)
@@ -150,21 +150,21 @@ if(isset($_POST['form_contact']))
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="name">Name</label>
-                                        <input type="text" class="form-control" name="visitor_name" placeholder="Enter name">
+                                        <input type="text" class="form-control" name="visitor_name" placeholder="Introduzca su nombre">
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Email Address</label>
-                                        <input type="email" class="form-control" name="visitor_email" placeholder="Enter email address">
+                                        <input type="email" class="form-control" name="visitor_email" placeholder="Introduzca su correo electrónico">
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Phone Number</label>
-                                        <input type="text" class="form-control" name="visitor_phone" placeholder="Enter phone number">
+                                        <input type="text" class="form-control" name="visitor_phone" placeholder="Introduzca su teléfono">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="name">Message</label>
-                                        <textarea name="visitor_message" class="form-control" rows="9" cols="25" placeholder="Enter message"></textarea>
+                                        <textarea name="visitor_message" class="form-control" rows="9" cols="25" placeholder="Introduzca su mensaje"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -175,7 +175,7 @@ if(isset($_POST['form_contact']))
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+                        <legend><span class="glyphicon glyphicon-globe"></span> Nuestra oficina</legend>
                         <address>
                             <?php echo nl2br($contact_address); ?>
                         </address>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>AdminLTE 2 | Dashboard</title>
+    <title>AdministradorLTE 2 | Panel</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
@@ -73,7 +73,7 @@
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>Admin</b>LTE</span>
+          <span class="logo-lg"><b>Administrador</b>LTE</span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">
@@ -84,7 +84,7 @@
             data-toggle="push-menu"
             role="button"
           >
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Cambiar navegación</span>
           </a>
 
           <div class="navbar-custom-menu">
@@ -96,7 +96,7 @@
                   <span class="label label-success">4</span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li class="header">You have 4 messages</li>
+                  <li class="header">Tienes 4 mensajes</li>
                   <li>
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">
@@ -114,7 +114,7 @@
                             Support Team
                             <small><i class="fa fa-clock-o"></i> 5 mins</small>
                           </h4>
-                          <p>Why not buy a new awesome theme?</p>
+                          <p>¿Por qué no comprar un tema nuevo e increíble?</p>
                         </a>
                       </li>
                       <!-- end message -->
@@ -128,10 +128,10 @@
                             />
                           </div>
                           <h4>
-                            AdminLTE Design Team
-                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                            Equipo de diseño AdminLTE  
+                            <small><i class="fa fa-clock-o"></i> 2 horas</small>
                           </h4>
-                          <p>Why not buy a new awesome theme?</p>
+                          <p>¿Por qué no comprar un tema nuevo e increíble?</p>
                         </a>
                       </li>
                       <li>
@@ -145,9 +145,9 @@
                           </div>
                           <h4>
                             Developers
-                            <small><i class="fa fa-clock-o"></i> Today</small>
+                            <small><i class="fa fa-clock-o"></i> Hoy</small>
                           </h4>
-                          <p>Why not buy a new awesome theme?</p>
+                          <p>¿Por qué no comprar un tema nuevo e increíble?</p>
                         </a>
                       </li>
                       <li>
@@ -160,12 +160,12 @@
                             />
                           </div>
                           <h4>
-                            Sales Department
+                            Departamento de ventas
                             <small
-                              ><i class="fa fa-clock-o"></i> Yesterday</small
+                              ><i class="fa fa-clock-o"></i> Ayer</small
                             >
                           </h4>
-                          <p>Why not buy a new awesome theme?</p>
+                          <p>¿Por qué no comprar un tema nuevo e increíble?</p>
                         </a>
                       </li>
                       <li>
@@ -178,15 +178,15 @@
                             />
                           </div>
                           <h4>
-                            Reviewers
-                            <small><i class="fa fa-clock-o"></i> 2 days</small>
+                            Revisores
+                            <small><i class="fa fa-clock-o"></i> 2 días</small>
                           </h4>
-                          <p>Why not buy a new awesome theme?</p>
+                          <p>¿Por qué no comprar un tema nuevo e increíble?</p>
                         </a>
                       </li>
                     </ul>
                   </li>
-                  <li class="footer"><a href="#">See All Messages</a></li>
+                  <li class="footer"><a href="#">Ver todos los mensajes</a></li>
                 </ul>
               </li>
               <!-- Notifications: style can be found in dropdown.less -->
@@ -196,44 +196,43 @@
                   <span class="label label-warning">10</span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li class="header">You have 10 notifications</li>
+                  <li class="header">Tienes 10 mensajes nuevos</li>
                   <li>
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">
                       <li>
                         <a href="#">
-                          <i class="fa fa-users text-aqua"></i> 5 new members
-                          joined today
+                          <i class="fa fa-users text-aqua"></i> 5 nuevos miembros
+                          se unieron hoy
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="fa fa-warning text-yellow"></i> Very long
-                          description here that may not fit into the page and
-                          may cause design problems
+                          <i class="fa fa-warning text-yellow"></i>
+                          Descripción muy larga, puede no caber en la página y
+                          puede causar problemas de diseño
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="fa fa-users text-red"></i> 5 new members
-                          joined
+                          <i class="fa fa-users text-red"></i> 5 nuevos miembros se han
+                          unido
                         </a>
                       </li>
                       <li>
                         <a href="#">
                           <i class="fa fa-shopping-cart text-green"></i> 25
-                          sales made
+                          ventas realizadas
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="fa fa-user text-red"></i> You changed your
-                          username
+                          <i class="fa fa-user text-red"></i> Cambiaste tu nombre de usuario
                         </a>
                       </li>
                     </ul>
                   </li>
-                  <li class="footer"><a href="#">View all</a></li>
+                  <li class="footer"><a href="#">Ver todo</a></li>
                 </ul>
               </li>
               <!-- Tasks: style can be found in dropdown.less -->
@@ -243,7 +242,7 @@
                   <span class="label label-danger">9</span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li class="header">You have 9 tasks</li>
+                  <li class="header">Tienes 9 tareas</li>
                   <li>
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">
@@ -251,7 +250,7 @@
                         <!-- Task item -->
                         <a href="#">
                           <h3>
-                            Design some buttons
+                            Diseñar algunos botones.
                             <small class="pull-right">20%</small>
                           </h3>
                           <div class="progress xs">
@@ -263,7 +262,7 @@
                               aria-valuemin="0"
                               aria-valuemax="100"
                             >
-                              <span class="sr-only">20% Complete</span>
+                              <span class="sr-only">20% Completado</span>
                             </div>
                           </div>
                         </a>
@@ -273,7 +272,7 @@
                         <!-- Task item -->
                         <a href="#">
                           <h3>
-                            Create a nice theme
+                            Crea un bonito tema
                             <small class="pull-right">40%</small>
                           </h3>
                           <div class="progress xs">
@@ -285,7 +284,7 @@
                               aria-valuemin="0"
                               aria-valuemax="100"
                             >
-                              <span class="sr-only">40% Complete</span>
+                              <span class="sr-only">40% Completado</span>
                             </div>
                           </div>
                         </a>
@@ -295,7 +294,7 @@
                         <!-- Task item -->
                         <a href="#">
                           <h3>
-                            Some task I need to do
+                            Alguna tarea que necesito hacer
                             <small class="pull-right">60%</small>
                           </h3>
                           <div class="progress xs">
@@ -307,7 +306,7 @@
                               aria-valuemin="0"
                               aria-valuemax="100"
                             >
-                              <span class="sr-only">60% Complete</span>
+                              <span class="sr-only">60% Completado</span>
                             </div>
                           </div>
                         </a>
@@ -317,7 +316,7 @@
                         <!-- Task item -->
                         <a href="#">
                           <h3>
-                            Make beautiful transitions
+                            Haz hermosas transiciones
                             <small class="pull-right">80%</small>
                           </h3>
                           <div class="progress xs">
@@ -329,7 +328,7 @@
                               aria-valuemin="0"
                               aria-valuemax="100"
                             >
-                              <span class="sr-only">80% Complete</span>
+                              <span class="sr-only">80% Completado</span>
                             </div>
                           </div>
                         </a>
@@ -338,7 +337,7 @@
                     </ul>
                   </li>
                   <li class="footer">
-                    <a href="#">View all tasks</a>
+                    <a href="#">mirar todas las tareas</a>
                   </li>
                 </ul>
               </li>
@@ -350,7 +349,7 @@
                     class="user-image"
                     alt="User Image"
                   />
-                  <span class="hidden-xs">Alexander Pierce</span>
+                  <span class="hidden-xs">Alejandro Pierce</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
@@ -362,21 +361,21 @@
                     />
 
                     <p>
-                      Alexander Pierce - Web Developer
-                      <small>Member since Nov. 2012</small>
+                      Alexander Pierce - Desarrollador web
+                      <small>Miembro desde noviembre de 2012</small>
                     </p>
                   </li>
                   <!-- Menu Body -->
                   <li class="user-body">
                     <div class="row">
                       <div class="col-xs-4 text-center">
-                        <a href="#">Followers</a>
+                        <a href="#">Seguidores</a>
                       </div>
                       <div class="col-xs-4 text-center">
-                        <a href="#">Sales</a>
+                        <a href="#">Ventas</a>
                       </div>
                       <div class="col-xs-4 text-center">
-                        <a href="#">Friends</a>
+                        <a href="#">Amigos</a>
                       </div>
                     </div>
                     <!-- /.row -->
@@ -384,10 +383,10 @@
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                      <a href="#" class="btn btn-default btn-flat">Perfil</a>
                     </div>
                     <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="#" class="btn btn-default btn-flat">Desconectar</a>
                     </div>
                   </li>
                 </ul>
@@ -416,8 +415,8 @@
               />
             </div>
             <div class="pull-left info">
-              <p>Alexander Pierce</p>
-              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+              <p>Alejandro Pierce</p>
+              <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
             </div>
           </div>
           <!-- search form -->
@@ -444,10 +443,10 @@
           <!-- /.search form -->
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu" data-widget="tree">
-            <li class="header">MAIN NAVIGATION</li>
+            <li class="header">NAVEGACIÓN PRINCIPAL</li>
             <li class="active treeview">
               <a href="#">
-                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                <i class="fa fa-dashboard"></i> <span>Panel</span>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>
@@ -455,12 +454,12 @@
               <ul class="treeview-menu">
                 <li class="active">
                   <a href="index.html"
-                    ><i class="fa fa-circle-o"></i> Dashboard v1</a
+                    ><i class="fa fa-circle-o"></i> Panel v1</a
                   >
                 </li>
                 <li>
                   <a href="index2.html"
-                    ><i class="fa fa-circle-o"></i> Dashboard v2</a
+                    ><i class="fa fa-circle-o"></i> Panel v2</a
                   >
                 </li>
               </ul>
@@ -468,7 +467,7 @@
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-files-o"></i>
-                <span>Layout Options</span>
+                <span>Opciones de diseño</span>
                 <span class="pull-right-container">
                   <span class="label label-primary pull-right">4</span>
                 </span>
@@ -476,22 +475,22 @@
               <ul class="treeview-menu">
                 <li>
                   <a href="pages/layout/top-nav.html"
-                    ><i class="fa fa-circle-o"></i> Top Navigation</a
+                    ><i class="fa fa-circle-o"></i> Navegación superior</a
                   >
                 </li>
                 <li>
                   <a href="pages/layout/boxed.html"
-                    ><i class="fa fa-circle-o"></i> Boxed</a
+                    ><i class="fa fa-circle-o"></i> En caja</a
                   >
                 </li>
                 <li>
                   <a href="pages/layout/fixed.html"
-                    ><i class="fa fa-circle-o"></i> Fixed</a
+                    ><i class="fa fa-circle-o"></i> Fijo</a
                   >
                 </li>
                 <li>
                   <a href="pages/layout/collapsed-sidebar.html"
-                    ><i class="fa fa-circle-o"></i> Collapsed Sidebar</a
+                    ><i class="fa fa-circle-o"></i> Barra lateral contraída</a
                   >
                 </li>
               </ul>
@@ -500,7 +499,7 @@
               <a href="pages/widgets.html">
                 <i class="fa fa-th"></i> <span>Widgets</span>
                 <span class="pull-right-container">
-                  <small class="label pull-right bg-green">new</small>
+                  <small class="label pull-right bg-green">nuevo</small>
                 </span>
               </a>
             </li>
