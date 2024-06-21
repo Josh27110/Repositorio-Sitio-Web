@@ -136,6 +136,7 @@ a:hover {
   width: 100%;
   height: auto;
   background: #fff;
+
 }
 
 .header .inner {
@@ -2147,3 +2148,4 @@ div.pagination span.disabled {
   padding-left: 15px;
   padding-right: 15px;
 }
+
