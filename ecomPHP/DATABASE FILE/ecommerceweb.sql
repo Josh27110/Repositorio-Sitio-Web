@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-06-2024 a las 05:27:24
+-- Tiempo de generación: 22-06-2024 a las 06:27:24
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -941,7 +941,17 @@ INSERT INTO `tbl_product` (`p_id`, `p_name`, `p_old_price`, `p_current_price`, `
 (7, 'Chanel Coco Noir Eau De', '129.99', '105.75', 41, 'product-featured-109.png', '<p>Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.<br></p>', '', '<p>width: 21.27</p><p>height: 28</p><p>depth: 11.89</p>', '<p>1 week warranty</p><p>Ships in 1 month</p><p>In Stock</p>', '<p>60 days return policy<br></p>', 1, 0, 1, 59),
 (8, 'Dior J\'adore', '89.99', '74.29', 91, 'product-featured-110.png', '<p>J\'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.<br></p>', '', '<p>width: 21.51</p><p>height: 7</p><p>depth: 26.51</p>', '<p>Lifetime warranty</p><p>Ships in 2 weeks</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 1, 0, 1, 59),
 (9, 'Dolce Shine Eau de', '69.99', '61.96', 3, 'product-featured-111.png', '<p>Dolce Shine by Dolce &amp; Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It\'s a joyful and youthful scent.<br></p>', '', '<p>width: 17</p><p>height: 24.57</p><p>depth: 13.3</p>', '<p>5 year warranty</p><p>Ships in 1-2 business days</p><p>Low Stock</p>', '<p>30 days return policy<br></p>', 3, 0, 1, 39),
-(112, 'Gucci Bloom Eau de', '79.99', '72.87', 93, 'product-featured-112.png', '<p>Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It\'s a modern and romantic scent.<br></p>', '', '<p>width: 22.28</p><p>height: 17.81</p><p>depth: 27.18</p>', '<p>No warranty</p><p>Ships in 2 weeks</p><p>In Stock</p>', '<p>No return policy<br></p>', 1, 0, 1, 39);
+(10, 'Gucci Bloom Eau de', '79.99', '72.87', 93, 'product-featured-112.png', '<p>Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It\'s a modern and romantic scent.<br></p>', '', '<p>width: 22.28</p><p>height: 17.81</p><p>depth: 27.18</p>', '<p>No warranty</p><p>Ships in 2 weeks</p><p>In Stock</p>', '<p>No return policy<br></p>', 1, 0, 1, 39),
+(11, 'Annibale Colombo Bed', '1899.99', '1844.89', 47, 'product-featured-113.png', '<p>The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.<br></p>', '', '<p>width: 28.75</p><p>height: 26.88</p><p>depth: 24.47</p>', '', '<p>2 year warranty</p><p>Ships overnight</p><p>In Stock</p>', 0, 0, 1, 78),
+(12, 'Annibale Colombo Sofa', '2499.99', '2036.49', 16, 'product-featured-114.png', '<p>The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room</p>', '', '<p>width: 20.97</p><p>height: 19.11</p><p>depth: 25.81</p>', '<p>1 month warranty</p><p>Ships overnight</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 0, 0, 1, 78),
+(13, 'Bedside Table African Cherry', '299.99', '271.25', 16, 'product-featured-115.png', '<p>The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.<br></p>', '', '<p>width: 25.43</p><p>height: 20.2</p><p>depth: 24.95</p>', '<p>6 months warranty</p><p>Ships in 1-2 business days</p><p>In Stock</p>', '<p>No return policy<br></p>', 0, 0, 1, 78),
+(14, 'Knoll Saarinen Executive Conference Chair', '499.99', '423.84', 47, 'product-featured-116.png', '<p>The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.<br></p>', '', '<p>width: 16.59</p><p>height: 21.46</p><p>depth: 29.07</p>', '<p>Lifetime warranty</p><p>Ships in 3-5 business days</p><p>In Stock</p>', '<p>30 days return policy<br></p>', 0, 0, 1, 78),
+(15, 'Wooden Bathroom Sink With Mirror', '799.99', '773.91', 95, 'product-featured-117.png', '<p>The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.<br></p>', '', '<p>width: 7.32</p><p>height: 22.64</p><p>depth: 12.37</p>', '<p>6 months warranty</p><p>Ships in 3-5 business days</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 0, 0, 1, 78),
+(16, 'Apple', '1.99', '1.95', 9, 'product-featured-118.png', '<p>Fresh and crisp apples, perfect for snacking or incorporating into various recipes.<br></p>', '', '<p>width: 8.29</p><p>height: 5.58</p><p>depth: 12.41</p>', '<p>2 year warranty</p><p>Ships in 2 weeks</p><p>In Stock</p>', '<p>60 days return policy<br></p>', 0, 0, 1, 73),
+(17, 'Beef Steak', '12.99', '10.65', 96, 'product-featured-119.png', '<p>High-quality beef steak, great for grilling or cooking to your preferred level of doneness.<br></p>', '', '<p>width: 23.35</p><p>height: 13.48</p><p>depth: 26.4</p>', '<p>1 month warranty</p><p>Ships overnight</p><p>In Stock</p>', '<p>90 days return policy<br></p>', 0, 0, 1, 73),
+(18, 'Cat Food', '8.99', '8.12', 13, 'product-featured-120.png', '<p>Nutritious cat food formulated to meet the dietary needs of your feline friend.<br></p>', '', '<p>width: 15.4</p><p>height: 13.97</p><p>depth: 25.13</p>', '<p>3 months warranty</p><p>Ships in 1-2 business days</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 0, 0, 1, 78),
+(19, 'Chicken Meat', '9.99', '8.34', 69, 'product-featured-121.png', '<p>Fresh and tender chicken meat, suitable for various culinary preparations.<br></p>', '', '<p>width: 15.96</p><p>height: 29.24</p><p>depth: 26.25</p>', '<p>Lifetime warranty</p><p>Ships in 1 month</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 0, 0, 1, 73),
+(20, 'Cooking Oil', '4.99', '3.22', 22, 'product-featured-122.png', '<p>Versatile cooking oil suitable for frying, sautéing, and various culinary applications.<br></p>', '', '<p>width: 8.18</p><p>height: 27.45</p><p>depth: 27.88</p>', '<p>Lifetime warranty</p><p>Ships in 1 month</p><p>In Stock</p>', '<p>60 days return policy<br></p>', 0, 0, 1, 73);
 
 -- --------------------------------------------------------
 
@@ -1110,7 +1120,28 @@ INSERT INTO `tbl_product_photo` (`pp_id`, `photo`, `p_id`) VALUES
 (149, '149.png', 111),
 (150, '150.png', 112),
 (151, '151.png', 112),
-(152, '152.png', 112);
+(152, '152.png', 112),
+(153, '153.png', 113),
+(154, '154.png', 113),
+(155, '155.png', 113),
+(156, '156.png', 114),
+(157, '157.png', 114),
+(158, '158.png', 114),
+(159, '159.png', 115),
+(160, '160.png', 115),
+(161, '161.png', 115),
+(162, '162.png', 116),
+(163, '163.png', 116),
+(164, '164.png', 116),
+(165, '165.png', 117),
+(166, '166.png', 117),
+(167, '167.png', 117),
+(168, '168.png', 118),
+(169, '169.png', 119),
+(170, '170.png', 120),
+(171, '171.png', 121),
+(172, '172.png', 121),
+(173, '173.png', 122);
 
 -- --------------------------------------------------------
 
@@ -1969,7 +2000,7 @@ ALTER TABLE `tbl_post`
 -- AUTO_INCREMENT de la tabla `tbl_product`
 --
 ALTER TABLE `tbl_product`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123;
 
 --
 -- AUTO_INCREMENT de la tabla `tbl_product_color`
@@ -1981,7 +2012,7 @@ ALTER TABLE `tbl_product_color`
 -- AUTO_INCREMENT de la tabla `tbl_product_photo`
 --
 ALTER TABLE `tbl_product_photo`
-  MODIFY `pp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=153;
+  MODIFY `pp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=174;
 
 --
 -- AUTO_INCREMENT de la tabla `tbl_product_size`
