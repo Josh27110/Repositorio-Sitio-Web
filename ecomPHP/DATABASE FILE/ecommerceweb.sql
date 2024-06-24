@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-06-2024 a las 06:27:24
+-- Tiempo de generación: 24-06-2024 a las 04:08:24
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -383,7 +383,8 @@ INSERT INTO `tbl_customer` (`cust_id`, `cust_name`, `cust_cname`, `cust_email`, 
 (7, 'Carl M. Dineen', 'none', 'carl@mail.com', '789878987', 230, '77 Lyndon Street', 'Kutztown', 'PA', '19855', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '5f4dcc3b5aa765d61d8327deb882cf99', 'c79bac688e70cc9665a2164c57ec172c', '2022-03-20 10:35:02', '1647797702', 1),
 (8, 'Benjamin B. Louque', 'none', 'benjamin@mail.com', '7777889955', 230, '32 Bridge Street', 'Tulsa', 'OK', '74220', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '5f4dcc3b5aa765d61d8327deb882cf99', '5a0e096368f9669508af7b7203382b07', '2022-03-20 10:36:31', '1647797791', 1),
 (9, 'Joe K. Richardson', 'none', 'joe@mail.com', '4444445555', 230, '17 Derek Drive', 'Youngstown', 'OH', '44500', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '5f4dcc3b5aa765d61d8327deb882cf99', 'e74ac0178d7833988d4b1625c42ba26e', '2022-03-20 10:37:18', '1647797838', 1),
-(10, 'Will Williams', 'Test Company', 'williams@mail.com', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', 'Will Williams', 'Test Company', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', 'Will Williams', 'Test Company', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', '5f4dcc3b5aa765d61d8327deb882cf99', '941c9265fb920f691cf01b12a15f80f8', '2022-03-20 11:15:59', '1647800159', 1);
+(10, 'Will Williams', 'Test Company', 'williams@mail.com', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', 'Will Williams', 'Test Company', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', 'Will Williams', 'Test Company', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', '5f4dcc3b5aa765d61d8327deb882cf99', '941c9265fb920f691cf01b12a15f80f8', '2022-03-20 11:15:59', '1647800159', 1),
+(11, 'kein', 'asas', 'kein@gmail.com', '5545230668', 1, 'asas', 'asas', 'asas', '55090', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', 'aa564f4b633415b87546ba99d2d42e36', 'c1dae10f23b2c3756964260634ad69ce', '2024-06-21 10:55:34', '1719035734', 1);
 
 -- --------------------------------------------------------
 
@@ -949,9 +950,22 @@ INSERT INTO `tbl_product` (`p_id`, `p_name`, `p_old_price`, `p_current_price`, `
 (15, 'Wooden Bathroom Sink With Mirror', '799.99', '773.91', 95, 'product-featured-117.png', '<p>The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.<br></p>', '', '<p>width: 7.32</p><p>height: 22.64</p><p>depth: 12.37</p>', '<p>6 months warranty</p><p>Ships in 3-5 business days</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 0, 0, 1, 78),
 (16, 'Apple', '1.99', '1.95', 9, 'product-featured-118.png', '<p>Fresh and crisp apples, perfect for snacking or incorporating into various recipes.<br></p>', '', '<p>width: 8.29</p><p>height: 5.58</p><p>depth: 12.41</p>', '<p>2 year warranty</p><p>Ships in 2 weeks</p><p>In Stock</p>', '<p>60 days return policy<br></p>', 0, 0, 1, 73),
 (17, 'Beef Steak', '12.99', '10.65', 96, 'product-featured-119.png', '<p>High-quality beef steak, great for grilling or cooking to your preferred level of doneness.<br></p>', '', '<p>width: 23.35</p><p>height: 13.48</p><p>depth: 26.4</p>', '<p>1 month warranty</p><p>Ships overnight</p><p>In Stock</p>', '<p>90 days return policy<br></p>', 0, 0, 1, 73),
-(18, 'Cat Food', '8.99', '8.12', 13, 'product-featured-120.png', '<p>Nutritious cat food formulated to meet the dietary needs of your feline friend.<br></p>', '', '<p>width: 15.4</p><p>height: 13.97</p><p>depth: 25.13</p>', '<p>3 months warranty</p><p>Ships in 1-2 business days</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 0, 0, 1, 78),
+(18, 'Cat Food', '8.99', '8.12', 13, 'product-featured-120.png', '<p>Nutritious cat food formulated to meet the dietary needs of your feline friend.<br></p>', '', '<p>width: 15.4</p><p>height: 13.97</p><p>depth: 25.13</p>', '<p>3 months warranty</p><p>Ships in 1-2 business days</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 3, 0, 1, 78),
 (19, 'Chicken Meat', '9.99', '8.34', 69, 'product-featured-121.png', '<p>Fresh and tender chicken meat, suitable for various culinary preparations.<br></p>', '', '<p>width: 15.96</p><p>height: 29.24</p><p>depth: 26.25</p>', '<p>Lifetime warranty</p><p>Ships in 1 month</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 0, 0, 1, 73),
-(20, 'Cooking Oil', '4.99', '3.22', 22, 'product-featured-122.png', '<p>Versatile cooking oil suitable for frying, sautéing, and various culinary applications.<br></p>', '', '<p>width: 8.18</p><p>height: 27.45</p><p>depth: 27.88</p>', '<p>Lifetime warranty</p><p>Ships in 1 month</p><p>In Stock</p>', '<p>60 days return policy<br></p>', 0, 0, 1, 73);
+(20, 'Cooking Oil', '4.99', '3.22', 22, 'product-featured-122.png', '<p>Versatile cooking oil suitable for frying, sautéing, and various culinary applications.<br></p>', '', '<p>width: 8.18</p><p>height: 27.45</p><p>depth: 27.88</p>', '<p>Lifetime warranty</p><p>Ships in 1 month</p><p>In Stock</p>', '<p>60 days return policy<br></p>', 0, 0, 1, 73),
+(21, 'Cucumber', '1.49', '1.41', 22, 'product-featured-123.png', '<p>Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.<br></p>', '', '<p>width: 11.04</p><p>height: 20.5</p><p>depth: 8.18</p>', '<p>5 year warranty</p><p>Ships overnight</p><p>In Stock</p>', '<p>30 days return policy<br></p>', 0, 0, 1, 73),
+(22, 'Dog Food', '10.99', '8.99', 40, 'product-featured-124.png', '<p>Specially formulated dog food designed to provide essential nutrients for your canine companion.<br></p>', '', '<p>width: 29.39</p><p>height: 29.77</p><p>depth: 20.54</p>', '<p>1 year warranty</p><p>Ships in 1 month</p><p>In Stock</p>', '<p>90 days return policy<br></p>', 0, 0, 1, 73),
+(23, 'Eggs', '2.99', '2.81', 10, 'product-featured-125.png', '<p>Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.<br></p>', '', '<p>width: 12.3</p><p>height: 10.99</p><p>depth: 15.53</p>', '<p>3 year warranty</p><p>Ships overnight</p><p>In Stock</p>', '<p>30 days return policy<br></p>', 0, 0, 1, 78),
+(24, 'Fish Steak', '14.99', '13.94', 99, 'product-featured-126.png', '<p>Quality fish steak, suitable for grilling, baking, or pan-searing.<br></p>', '', '<p>width: 20.14</p><p>height: 8.4</p><p>depth: 10.01</p>', '<p>1 year warranty</p><p>Ships in 1 month</p><p>In Stock</p>', '<p>30 days return policy<br></p>', 0, 0, 1, 78),
+(25, 'Green Bell Pepper', '1.29', '1.23', 89, 'product-featured-127.png', '<p>Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.<br></p>', '', '<p>width: 7.32</p><p>height: 14.31</p><p>depth: 21.38</p>', '<p>5 year warranty</p><p>Ships overnight</p><p>In Stock</p>', '<p>30 days return policy<br></p>', 0, 0, 1, 78),
+(26, 'Green Chili Pepper', '0.99', '0.80', 8, 'product-featured-128.png', '<p>Spicy green chili pepper, ideal for adding heat to your favorite recipes.<br></p>', '', '<p>width: 18.67</p><p>height: 21.17</p><p>depth: 25.26</p>', '<p>No warranty</p><p>Ships in 1-2 business days</p><p>In Stock</p>', '<p>30 days return policy<br></p>', 0, 0, 1, 78),
+(27, 'Honey Jar', '6.99', '6.85', 25, 'product-featured-129.png', '<p>Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.<br></p>', '', '<p>width: 26.53</p><p>height: 27.11</p><p>depth: 6.63</p>', '<p>2 year warranty</p><p>Ships overnight</p><p>In Stock</p>', '<p>90 days return policy<br></p>', 0, 0, 1, 78),
+(28, 'Ice Cream', '5.49', '5.07', 76, 'product-featured-130.png', '<p>Creamy and delicious ice cream, available in various flavors for a delightful treat.<br></p>', '', '<p>width: 17.66</p><p>height: 24.49</p><p>depth: 25.98</p>', '<p>2 year warranty</p><p>Ships in 2 weeks</p><p>In Stock</p>', '<p>No return policy<br></p>', 0, 0, 1, 78),
+(29, 'Juice', '3.99', '3.77', 99, 'product-featured-131.png', '<p>Refreshing fruit juice, packed with vitamins and great for staying hydrated.<br></p>', '', '<p>width: 8.97</p><p>height: 12.26</p><p>depth: 15.05</p>', '<p>1 week warranty</p><p>Ships in 1-2 business days</p><p>In Stock</p>', '<p>90 days return policy<br></p>', 0, 0, 1, 78),
+(30, 'Kiwi', '2.49', '2.23', 1, 'product-featured-132.png', '<p>Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.<br></p>', '', '<p>width: 27.3</p><p>height: 7.48</p><p>depth: 15.08</p>', '<p>6 months warranty</p><p>Ships in 3-5 business days</p><p>Low Stock</p>', '<p>7 days return policy<br></p>', 0, 0, 1, 78),
+(31, 'Lemon', '0.79', '0.64', 1, 'product-featured-133.png', '<p>Zesty and tangy lemons, versatile for cooking, baking, or making refreshing beverages.<br></p>', '', '<p>width: 25.97</p><p>height: 27.47</p><p>depth: 6.31</p>', '<p>3 year warranty</p><p>Ships in 1 week</p><p>Out of Stock</p>', '<p>90 days return policy<br></p>', 0, 0, 1, 78),
+(32, 'Milk', '3.49', '2.96', 57, 'product-featured-134.png', '<p>Fresh and nutritious milk, a staple for various recipes and daily consumption.<br></p>', '', '<p>width: 22.42</p><p>height: 20.9</p><p>depth: 12.48</p>', '<p>6 months warranty</p><p>shippingInformation: Ships in 1 month</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 0, 0, 1, 78),
+(33, 'Mulberry', '4.99', '4.17', 79, 'product-featured-135.png', '<p>Sweet and juicy mulberries, perfect for snacking or adding to desserts and cereals.<br></p>', '', '<p>width: 11.12</p><p>height: 27.3</p><p>depth: 27.57</p>', '<p>3 months warranty</p><p>Ships in 1 month</p><p>In Stock</p>', '<p>60 days return policy<br></p>', 0, 0, 1, 78);
 
 -- --------------------------------------------------------
 
@@ -1141,7 +1155,23 @@ INSERT INTO `tbl_product_photo` (`pp_id`, `photo`, `p_id`) VALUES
 (170, '170.png', 120),
 (171, '171.png', 121),
 (172, '172.png', 121),
-(173, '173.png', 122);
+(173, '173.png', 122),
+(174, '174.png', 123),
+(175, '175.png', 124),
+(176, '176.png', 125),
+(177, '177.png', 126),
+(178, '178.png', 127),
+(179, '179.png', 128),
+(180, '180.png', 129),
+(181, '181.png', 130),
+(182, '182.png', 130),
+(183, '183.png', 130),
+(184, '184.png', 130),
+(185, '185.png', 131),
+(186, '186.png', 132),
+(187, '187.png', 133),
+(188, '188.png', 134),
+(189, '189.png', 135);
 
 -- --------------------------------------------------------
 
@@ -1934,7 +1964,7 @@ ALTER TABLE `tbl_country`
 -- AUTO_INCREMENT de la tabla `tbl_customer`
 --
 ALTER TABLE `tbl_customer`
-  MODIFY `cust_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `cust_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `tbl_customer_message`
@@ -2000,7 +2030,7 @@ ALTER TABLE `tbl_post`
 -- AUTO_INCREMENT de la tabla `tbl_product`
 --
 ALTER TABLE `tbl_product`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
 
 --
 -- AUTO_INCREMENT de la tabla `tbl_product_color`
@@ -2012,7 +2042,7 @@ ALTER TABLE `tbl_product_color`
 -- AUTO_INCREMENT de la tabla `tbl_product_photo`
 --
 ALTER TABLE `tbl_product_photo`
-  MODIFY `pp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=174;
+  MODIFY `pp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=190;
 
 --
 -- AUTO_INCREMENT de la tabla `tbl_product_size`
