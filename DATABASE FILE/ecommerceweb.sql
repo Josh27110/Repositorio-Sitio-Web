@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 26-06-2024 a las 04:57:52
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
+-- Host: localhost
+-- Generation Time: Jun 26, 2024 at 05:21 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `ecommerceweb`
+-- Database: `ecommerceweb`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_color`
+-- Table structure for table `tbl_color`
 --
 
 CREATE TABLE `tbl_color` (
@@ -33,7 +33,7 @@ CREATE TABLE `tbl_color` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_color`
+-- Dumping data for table `tbl_color`
 --
 
 INSERT INTO `tbl_color` (`color_id`, `color_name`) VALUES
@@ -70,7 +70,7 @@ INSERT INTO `tbl_color` (`color_id`, `color_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_country`
+-- Table structure for table `tbl_country`
 --
 
 CREATE TABLE `tbl_country` (
@@ -79,7 +79,7 @@ CREATE TABLE `tbl_country` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Volcado de datos para la tabla `tbl_country`
+-- Dumping data for table `tbl_country`
 --
 
 INSERT INTO `tbl_country` (`country_id`, `country_name`) VALUES
@@ -332,7 +332,7 @@ INSERT INTO `tbl_country` (`country_id`, `country_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_customer`
+-- Table structure for table `tbl_customer`
 --
 
 CREATE TABLE `tbl_customer` (
@@ -370,7 +370,7 @@ CREATE TABLE `tbl_customer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_customer`
+-- Dumping data for table `tbl_customer`
 --
 
 INSERT INTO `tbl_customer` (`cust_id`, `cust_name`, `cust_cname`, `cust_email`, `cust_phone`, `cust_country`, `cust_address`, `cust_city`, `cust_state`, `cust_zip`, `cust_b_name`, `cust_b_cname`, `cust_b_phone`, `cust_b_country`, `cust_b_address`, `cust_b_city`, `cust_b_state`, `cust_b_zip`, `cust_s_name`, `cust_s_cname`, `cust_s_phone`, `cust_s_country`, `cust_s_address`, `cust_s_city`, `cust_s_state`, `cust_s_zip`, `cust_password`, `cust_token`, `cust_datetime`, `cust_timestamp`, `cust_status`) VALUES
@@ -384,12 +384,12 @@ INSERT INTO `tbl_customer` (`cust_id`, `cust_name`, `cust_cname`, `cust_email`, 
 (8, 'Benjamin B. Louque', 'none', 'benjamin@mail.com', '7777889955', 230, '32 Bridge Street', 'Tulsa', 'OK', '74220', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '5f4dcc3b5aa765d61d8327deb882cf99', '5a0e096368f9669508af7b7203382b07', '2022-03-20 10:36:31', '1647797791', 1),
 (9, 'Joe K. Richardson', 'none', 'joe@mail.com', '4444445555', 230, '17 Derek Drive', 'Youngstown', 'OH', '44500', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '5f4dcc3b5aa765d61d8327deb882cf99', 'e74ac0178d7833988d4b1625c42ba26e', '2022-03-20 10:37:18', '1647797838', 1),
 (10, 'Will Williams', 'Test Company', 'williams@mail.com', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', 'Will Williams', 'Test Company', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', 'Will Williams', 'Test Company', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', '5f4dcc3b5aa765d61d8327deb882cf99', '941c9265fb920f691cf01b12a15f80f8', '2022-03-20 11:15:59', '1647800159', 1),
-(12, 'kein', 'asasa', 'kein@mail.com', '5566778899', 19, 'asas', 'asas', 'asas', '55090', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '25d55ad283aa400af464c76d713c07ad', 'bdb83def3bde0538d1600a97c5dbed60', '2024-06-25 07:54:26', '1719370466', 1);
+(12, 'kein', 'IPN', 'kein@mail.com', '5566778899', 3, 'asas', 'asas', 'asas', '55090', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '25d55ad283aa400af464c76d713c07ad', 'bdb83def3bde0538d1600a97c5dbed60', '2024-06-25 07:54:26', '1719370466', 1);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_customer_message`
+-- Table structure for table `tbl_customer_message`
 --
 
 CREATE TABLE `tbl_customer_message` (
@@ -403,7 +403,7 @@ CREATE TABLE `tbl_customer_message` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_end_category`
+-- Table structure for table `tbl_end_category`
 --
 
 CREATE TABLE `tbl_end_category` (
@@ -413,7 +413,7 @@ CREATE TABLE `tbl_end_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_end_category`
+-- Dumping data for table `tbl_end_category`
 --
 
 INSERT INTO `tbl_end_category` (`ecat_id`, `ecat_name`, `mcat_id`) VALUES
@@ -494,12 +494,21 @@ INSERT INTO `tbl_end_category` (`ecat_id`, `ecat_name`, `mcat_id`) VALUES
 (76, 'Vitaminas y suplementos dietéticos', 16),
 (77, 'Cuidado del bebé y del niño', 17),
 (78, 'Suministros para el hogar', 17),
-(79, 'Papelería y suministros para envolver regalos', 17);
+(79, 'Papelería y suministros para envolver regalos', 17),
+(80, 'Polvo', 18),
+(81, 'Tuberculos', 19),
+(82, 'Alliaceae', 19),
+(83, 'Fino', 20),
+(84, 'Liquido', 18),
+(85, 'Fragaria', 21),
+(86, 'Muebles', 17),
+(87, 'Utensilios', 22),
+(88, 'Electrodomesticos', 22);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_faq`
+-- Table structure for table `tbl_faq`
 --
 
 CREATE TABLE `tbl_faq` (
@@ -509,7 +518,7 @@ CREATE TABLE `tbl_faq` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_faq`
+-- Dumping data for table `tbl_faq`
 --
 
 INSERT INTO `tbl_faq` (`faq_id`, `faq_title`, `faq_content`) VALUES
@@ -522,7 +531,7 @@ INSERT INTO `tbl_faq` (`faq_id`, `faq_title`, `faq_content`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_language`
+-- Table structure for table `tbl_language`
 --
 
 CREATE TABLE `tbl_language` (
@@ -532,7 +541,7 @@ CREATE TABLE `tbl_language` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_language`
+-- Dumping data for table `tbl_language`
 --
 
 INSERT INTO `tbl_language` (`lang_id`, `lang_name`, `lang_value`) VALUES
@@ -632,7 +641,7 @@ INSERT INTO `tbl_language` (`lang_id`, `lang_name`, `lang_value`) VALUES
 (94, 'Dirección de Correo Electrónico', 'Dirección de Correo Electrónico'),
 (95, 'Ingrese su Dirección de Correo Electrónico', 'Ingrese su Dirección de Correo Electrónico'),
 (96, 'Contraseña', 'Contraseña'),
-(97, 'Olvidar Contraseña', 'Olvidar Contraseña'),
+(97, 'Olvidó su Contraseña', 'Olvidó su Contraseña'),
 (98, 'Reingrese Contraseña', 'Reingrese Contraseña'),
 (99, 'Actualizar Contraseña', 'Actualizar Contraseña'),
 (100, 'Nueva Contraseña', 'Nueva Contraseña'),
@@ -703,7 +712,7 @@ INSERT INTO `tbl_language` (`lang_id`, `lang_name`, `lang_value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_mid_category`
+-- Table structure for table `tbl_mid_category`
 --
 
 CREATE TABLE `tbl_mid_category` (
@@ -713,7 +722,7 @@ CREATE TABLE `tbl_mid_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_mid_category`
+-- Dumping data for table `tbl_mid_category`
 --
 
 INSERT INTO `tbl_mid_category` (`mcat_id`, `mcat_name`, `tcat_id`) VALUES
@@ -731,12 +740,17 @@ INSERT INTO `tbl_mid_category` (`mcat_id`, `mcat_name`, `tcat_id`) VALUES
 (14, 'Artículos Electrónicos', 4),
 (15, 'Computadoras', 4),
 (16, 'Salud', 5),
-(17, 'Hogar', 5);
+(17, 'Hogar', 5),
+(18, 'Bebidas', 6),
+(19, 'Vegetales', 6),
+(20, 'Granos', 6),
+(21, 'Frutas', 6),
+(22, 'Cocina', 5);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_order`
+-- Table structure for table `tbl_order`
 --
 
 CREATE TABLE `tbl_order` (
@@ -751,7 +765,7 @@ CREATE TABLE `tbl_order` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_order`
+-- Dumping data for table `tbl_order`
 --
 
 INSERT INTO `tbl_order` (`id`, `product_id`, `product_name`, `size`, `color`, `quantity`, `unit_price`, `payment_id`) VALUES
@@ -763,7 +777,7 @@ INSERT INTO `tbl_order` (`id`, `product_id`, `product_name`, `size`, `color`, `q
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_page`
+-- Table structure for table `tbl_page`
 --
 
 CREATE TABLE `tbl_page` (
@@ -802,16 +816,16 @@ CREATE TABLE `tbl_page` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_page`
+-- Dumping data for table `tbl_page`
 --
 
 INSERT INTO `tbl_page` (`id`, `about_title`, `about_content`, `about_banner`, `about_meta_title`, `about_meta_keyword`, `about_meta_description`, `faq_title`, `faq_banner`, `faq_meta_title`, `faq_meta_keyword`, `faq_meta_description`, `blog_title`, `blog_banner`, `blog_meta_title`, `blog_meta_keyword`, `blog_meta_description`, `contact_title`, `contact_banner`, `contact_meta_title`, `contact_meta_keyword`, `contact_meta_description`, `pgallery_title`, `pgallery_banner`, `pgallery_meta_title`, `pgallery_meta_keyword`, `pgallery_meta_description`, `vgallery_title`, `vgallery_banner`, `vgallery_meta_title`, `vgallery_meta_keyword`, `vgallery_meta_description`) VALUES
-(1, 'Sobre nosotros', '<p style=\"border: 0px solid; margin-top: 1.5rem; margin-bottom: 0px;\">¡Bienvenido a PAPU TIENDA!</p><p style=\"border: 0px solid; margin-top: 1.5rem; margin-bottom: 0px;\"><span style=\"border: 0px solid;\">Nuestro objetivo es ofrecer a nuestros clientes una variedad de lo último [PRODUCTS_CATEGORY_NAME]. Hemos recorrido un largo camino, por lo que sabemos exactamente qué dirección tomar cuando le ofrecemos productos de alta calidad pero económicos. Ofrecemos todo esto mientras brindamos un excelente servicio al cliente y un soporte amigable.</span></p><p style=\"border: 0px solid; margin-top: 1.5rem; margin-bottom: 0px;\"><span style=\"border: 0px solid;\">Siempre estamos atentos a las últimas tendencias en [PRODUCTS CATEGORY NAME] y anteponer los deseos de nuestros clientes. Es por eso que tenemos clientes satisfechos en todo el mundo y estamos encantados de ser parte de la [PRODUCTS CATEGORY NAME] industria.</span></p><p style=\"border: 0px solid; margin-top: 1.5rem; margin-bottom: 0px;\"><span style=\"border: 0px solid;\">Los intereses de nuestros clientes son siempre la máxima prioridad para nosotros, por lo que esperamos que disfrute de nuestros productos tanto como nosotros disfrutamos poniéndolos a su disposición.</span></p><p style=\"\">Nos aseguramos de que obtenga prendas de la mejor calidad con una política de cambios y devoluciones sin complicaciones. ¡Nos aseguramos de que lo que ve sea exactamente lo que obtiene!</p><ul><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Garantía de precio bajo</span></font></li><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Atención al cliente 24 horas al día, 7 días a la semana</span></font></li><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">E-Mail - Text - Call</span></font></li><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Estamos aquí para usted las 24 horas del día, los 7 días de la semana, en línea y por teléfono.</span></font></li><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Sizing & Color</span></font></li><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Envío al mundo entero</span></font></li><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Nos encantaría expandir nuestro negocio a nivel internacional pronto.</span></font></li><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Easy Returns</span></font></li></ul><p style=\"text-align: justify; \"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">¿Compró un conjunto pero quiere devolverlo? Tenemos una política de devolución fácil de 3 días. Envíenos un correo electrónico a support@ecommercephp.com para obtener más detalles.</span></font></p><p style=\"text-align: justify; \"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\"><b>Vestidos de ensueño para cada ocasión</b></span></font></p><p style=\"text-align: justify; \"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Fashionys.com ofrece todas las prendas cuidadosamente seleccionadas por nuestros estilistas. Si está interesado en un modelo en particular, envíenos un correo electrónico y haremos todo lo posible para ofrecerle el vestido que ama.</span></font></p><p style=\"text-align: justify; \"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\"><b>Seguridad verificada</b></span></font></p><p style=\"text-align: justify; \"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Todas nuestras transacciones están Verificadas por Norton y con los más altos estándares de seguridad. Además, también hay mucho para todos a través de interesantes ofertas y obsequios regulares, así que corra la voz y recomiéndenos con todos, desde su familia, amigos y colegas, y obtenga una recompensa por ello. Y para colmo, puedes compartir tu experiencia de usuario publicando reseñas. No esperes más ¡Regístrate con nosotros ahora! empieza a acechar, empieza a comprar y empieza a amar y empieza a presentar la belleza que hay en ti.</span></font></p>\r\n', 'about-banner.jpg', 'PAPU TIENDA - Sobre nosotros', 'sobre, sobre nosotros, sobre moda, sobre empresa, sobre proyecto php de comercio electrónico', 'Nuestro objetivo siempre ha sido sacar lo mejor de ti. Trajimos una gran colección, ya sea que asistas a una fiesta, una boda y todos esos eventos que requieren un vestido WOW.', 'FAQ', 'faq-banner.jpg', 'Fashionys.com - Preguntas frecuentes', '', '', 'Blog', 'blog-banner.jpg', 'PAPU TIENDA - Blog', '', '', 'Contacta con nosotros', 'contact-banner.jpg', 'Fashionys.com - Contacto', '', '', 'Galeria de fotos', 'pgallery-banner.jpg', 'PAPU TIENDA - Galeria de fotos', '', '', 'Galeria de VIDEOS', 'vgallery-banner.jpg', 'PAPU TIENDA - Galería de vídeos', '', '');
+(1, 'Sobre nosotros', '<p style=\"border: 0px solid; margin-top: 1.5rem; margin-bottom: 0px;\">Bienvenido a PAPU TIENDA!</p><p style=\"border: 0px solid; margin-top: 1.5rem; margin-bottom: 0px;\"><span style=\"border: 0px solid;\">Nuestro objetivo es ofrecer a nuestros clientes una variedad de lo último [PRODUCTS_CATEGORY_NAME]. Hemos recorrido un largo camino, por lo que sabemos exactamente qué dirección tomar cuando le ofrecemos productos de alta calidad pero económicos. Ofrecemos todo esto mientras brindamos un excelente servicio al cliente y un soporte amigable.</span></p><p style=\"border: 0px solid; margin-top: 1.5rem; margin-bottom: 0px;\"><span style=\"border: 0px solid;\">Siempre estamos atentos a las últimas tendencias en [PRODUCTS CATEGORY NAME] y anteponer los deseos de nuestros clientes. Es por eso que tenemos clientes satisfechos en todo el mundo y estamos encantados de ser parte de la [PRODUCTS CATEGORY NAME] industria.</span></p><p style=\"border: 0px solid; margin-top: 1.5rem; margin-bottom: 0px;\"><span style=\"border: 0px solid;\">Los intereses de nuestros clientes son siempre la máxima prioridad para nosotros, por lo que esperamos que disfrute de nuestros productos tanto como nosotros disfrutamos poniéndolos a su disposición.</span></p><p style=\"\">Nos aseguramos de que obtenga prendas de la mejor calidad con una política de cambios y devoluciones sin complicaciones. ¡Nos aseguramos de que lo que ve sea exactamente lo que obtiene!</p><ul><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Garantía de precio bajo</span></font></li><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Atención al cliente 24 horas al día, 7 días a la semana</span></font></li><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">E-Mail - Text - Call</span></font></li><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Estamos aquí para usted las 24 horas del día, los 7 días de la semana, en línea y por teléfono.</span></font></li><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Sizing &amp; Color</span></font></li><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Envío al mundo entero</span></font></li><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Nos encantaría expandir nuestro negocio a nivel internacional pronto.</span></font></li><li style=\"text-align: justify;\"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Easy Returns</span></font></li></ul><p style=\"text-align: justify; \"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">¿Compró un conjunto pero quiere devolverlo? Tenemos una política de devolución fácil de 3 días. Envíenos un correo electrónico a support@ecommercephp.com para obtener más detalles.</span></font></p><p style=\"text-align: justify; \"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\"><b>Vestidos de ensueño para cada ocasión</b></span></font></p><p style=\"text-align: justify; \"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Fashionys.com ofrece todas las prendas cuidadosamente seleccionadas por nuestros estilistas. Si está interesado en un modelo en particular, envíenos un correo electrónico y haremos todo lo posible para ofrecerle el vestido que ama.</span></font></p><p style=\"text-align: justify; \"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\"><b>Seguridad verificada</b></span></font></p><p style=\"text-align: justify; \"><font face=\"apercu, Arial, sans-serif\"><span style=\"font-size: 14px;\">Todas nuestras transacciones están Verificadas por Norton y con los más altos estándares de seguridad. Además, también hay mucho para todos a través de interesantes ofertas y obsequios regulares, así que corra la voz y recomiéndenos con todos, desde su familia, amigos y colegas, y obtenga una recompensa por ello. Y para colmo, puedes compartir tu experiencia de usuario publicando reseñas. No esperes más ¡Regístrate con nosotros ahora! empieza a acechar, empieza a comprar y empieza a amar y empieza a presentar la belleza que hay en ti.</span></font></p>\r\n', 'about-banner.jpg', 'PAPJ - Sobre nosotros', 'sobre, sobre nosotros, sobre moda, sobre empresa, sobre proyecto php de comercio electrónico', 'Nuestro objetivo siempre ha sido sacar lo mejor de ti. Trajimos una gran colección, ya sea que asistas a una fiesta, una boda y todos esos eventos que requieren un vestido WOW.', 'FAQ', 'faq-banner.jpg', 'Fashionys.com - Preguntas frecuentes', '', '', 'Blog', 'blog-banner.jpg', 'PAPJ - Blog', '', '', 'Contacta con nosotros', 'contact-banner.jpg', 'Fashionys.com - Contacto', '', '', 'Galeria de fotos', 'pgallery-banner.jpg', 'PAPJ - Galeria de fotos', '', '', 'Galeria de VIDEOS', 'vgallery-banner.jpg', 'PAPJ - Galería de vídeos', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_payment`
+-- Table structure for table `tbl_payment`
 --
 
 CREATE TABLE `tbl_payment` (
@@ -834,7 +848,7 @@ CREATE TABLE `tbl_payment` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_payment`
+-- Dumping data for table `tbl_payment`
 --
 
 INSERT INTO `tbl_payment` (`id`, `customer_id`, `customer_name`, `customer_email`, `payment_date`, `txnid`, `paid_amount`, `card_number`, `card_cvv`, `card_month`, `card_year`, `bank_transaction_info`, `payment_method`, `payment_status`, `shipping_status`, `payment_id`) VALUES
@@ -846,7 +860,7 @@ INSERT INTO `tbl_payment` (`id`, `customer_id`, `customer_name`, `customer_email
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_photo`
+-- Table structure for table `tbl_photo`
 --
 
 CREATE TABLE `tbl_photo` (
@@ -856,7 +870,7 @@ CREATE TABLE `tbl_photo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_photo`
+-- Dumping data for table `tbl_photo`
 --
 
 INSERT INTO `tbl_photo` (`id`, `caption`, `photo`) VALUES
@@ -870,7 +884,7 @@ INSERT INTO `tbl_photo` (`id`, `caption`, `photo`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_post`
+-- Table structure for table `tbl_post`
 --
 
 CREATE TABLE `tbl_post` (
@@ -888,7 +902,7 @@ CREATE TABLE `tbl_post` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_post`
+-- Dumping data for table `tbl_post`
 --
 
 INSERT INTO `tbl_post` (`post_id`, `post_title`, `post_slug`, `post_content`, `post_date`, `photo`, `category_id`, `total_view`, `meta_title`, `meta_keyword`, `meta_description`) VALUES
@@ -907,7 +921,7 @@ INSERT INTO `tbl_post` (`post_id`, `post_title`, `post_slug`, `post_content`, `p
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_product`
+-- Table structure for table `tbl_product`
 --
 
 CREATE TABLE `tbl_product` (
@@ -929,16 +943,16 @@ CREATE TABLE `tbl_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_product`
+-- Dumping data for table `tbl_product`
 --
 
 INSERT INTO `tbl_product` (`p_id`, `p_name`, `p_old_price`, `p_current_price`, `p_qty`, `p_featured_photo`, `p_description`, `p_short_description`, `p_feature`, `p_condition`, `p_return_policy`, `p_total_view`, `p_is_featured`, `p_is_active`, `ecat_id`) VALUES
-(1, 'Essence Mascara Lash Princess', '9.99', '7.17', 5, 'product-featured-103.png', '<p>The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.<br></p>', '', '<p>\"width\": 23.17,</p><p>\"height\": 14.43,</p><p>\"depth\": 28.01</p>', '<p>1 month warranty\",</p><p>Ships in 1 month</p><p>Low Stock</p>', '<p>30 days return policy<br></p>', 1, 0, 1, 43),
-(2, 'Eyeshadow Palette with Mirror', '19.99', '5.5', 44, 'product-featured-104.png', '<p>The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.<br></p>', '', '<p>width: 12.42</p><p>height\": 8.63</p><p>depth: 29.13</p>', '<p>1 year warranty</p><p>shippingInformation: Ships in 2 weeks</p><p>availabilityStatus: In Stock</p>', '30 days return policy', 2, 0, 1, 43),
-(3, 'Powder Canister', '19.03', '12.99', 68, 'product-featured-105.png', '<p>The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.<br></p>', '', '<p>width: 24.16</p><p>height\" 10.7,</p><p>depth: 11.07</p>', '<p>2 year warranty</p><p>shippingInformation: Ships in 1-2 business days</p><p>availabilityStatus: In Stock</p>', '<p>60 days return policy<br></p>', 3, 0, 1, 45),
-(4, 'Red Lipstick', '19.03', '12.99', 68, 'product-featured-106.png', '<p>The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.<br></p>', '', '<p>width: 14.37</p><p>height: 13.94</p><p>depth: 14.6</p>', '<p>Lifetime warranty</p><p>Ships in 2 weeks</p><p>In Stock</p>', '<p>90 days return policy<br></p>', 2, 0, 1, 44),
-(5, 'Red Nail Polish', '8.99', '2.46', 71, 'product-featured-107.png', '<p>The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.<br></p>', '', '<p>width: 14.37</p><p>height: 13.94</p><p>depth: 14.6</p>', '<p>Lifetime warranty</p><p>Ships in 2 weeks<br></p><p>In Stock</p>', '<p>90 days return policy<br></p>', 2, 0, 1, 46),
-(6, 'Calvin Klein CK One', '49.99', '34', 17, 'product-featured-108.png', '<p>CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It\'s a versatile fragrance suitable for everyday wear.</p>', '', '<p>width: 11.53</p><p>height: 14.44</p><p>depth: 6.81</p>', '<p>5 year warranty</p><p>Ships overnight</p><p>In Stock</p>', '<p>No return policy<br></p>', 4, 0, 1, 59),
+(1, 'Essence Mascara Lash Princess', '9.99', '9.27', 5, 'product-featured-103.png', '<p>The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.<br></p>', '', '<p>\"width\": 23.17,</p><p>\"height\": 14.43,</p><p>\"depth\": 28.01</p>', '<p>1 month warranty\",</p><p>Ships in 1 month</p><p>Low Stock</p>', '<p>30 days return policy<br></p>', 1, 0, 1, 43),
+(2, 'Eyeshadow Palette with Mirror', '19.99', '18.89', 44, 'product-featured-104.png', '<p>The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.<br></p>', '', '<p>width: 12.42</p><p>height\": 8.63</p><p>depth: 29.13</p>', '<p>1 year warranty</p><p>shippingInformation: Ships in 2 weeks</p><p>availabilityStatus: In Stock</p>', '30 days return policy', 2, 0, 1, 43),
+(3, 'Powder Canister', '14.99', '12.27', 68, 'product-featured-105.png', '<p>The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.<br></p>', '', '<p>width: 24.16</p><p>height\" 10.7,</p><p>depth: 11.07</p>', '<p>2 year warranty</p><p>shippingInformation: Ships in 1-2 business days</p><p>availabilityStatus: In Stock</p>', '<p>60 days return policy<br></p>', 3, 0, 1, 45),
+(4, 'Red Lipstick', '12.99', '10.51', 68, 'product-featured-106.png', '<p>The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.<br></p>', '', '<p>width: 14.37</p><p>height: 13.94</p><p>depth: 14.6</p>', '<p>Lifetime warranty</p><p>Ships in 2 weeks</p><p>In Stock</p>', '<p>90 days return policy<br></p>', 2, 0, 1, 44),
+(5, 'Red Nail Polish', '8.99', '8.76', 71, 'product-featured-107.png', '<p>The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.<br></p>', '', '<p>width: 14.37</p><p>height: 13.94</p><p>depth: 14.6</p>', '<p>Lifetime warranty</p><p>Ships in 2 weeks<br></p><p>In Stock</p>', '<p>90 days return policy<br></p>', 2, 0, 1, 46),
+(6, 'Calvin Klein CK One', '49.99', '35.59', 17, 'product-featured-108.png', '<p>CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It\'s a versatile fragrance suitable for everyday wear.</p>', '', '<p>width: 11.53</p><p>height: 14.44</p><p>depth: 6.81</p>', '<p>5 year warranty</p><p>Ships overnight</p><p>In Stock</p>', '<p>No return policy<br></p>', 4, 0, 1, 59),
 (7, 'Chanel Coco Noir Eau De', '129.99', '105.75', 41, 'product-featured-109.png', '<p>Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.<br></p>', '', '<p>width: 21.27</p><p>height: 28</p><p>depth: 11.89</p>', '<p>1 week warranty</p><p>Ships in 1 month</p><p>In Stock</p>', '<p>60 days return policy<br></p>', 2, 0, 1, 59),
 (8, 'Dior J\'adore', '89.99', '74.29', 91, 'product-featured-110.png', '<p>J\'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.<br></p>', '', '<p>width: 21.51</p><p>height: 7</p><p>depth: 26.51</p>', '<p>Lifetime warranty</p><p>Ships in 2 weeks</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 4, 0, 1, 59),
 (9, 'Dolce Shine Eau de', '69.99', '61.96', 3, 'product-featured-111.png', '<p>Dolce Shine by Dolce &amp; Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It\'s a joyful and youthful scent.<br></p>', '', '<p>width: 17</p><p>height: 24.57</p><p>depth: 13.3</p>', '<p>5 year warranty</p><p>Ships in 1-2 business days</p><p>Low Stock</p>', '<p>30 days return policy<br></p>', 3, 0, 1, 39),
@@ -964,13 +978,40 @@ INSERT INTO `tbl_product` (`p_id`, `p_name`, `p_old_price`, `p_current_price`, `
 (29, 'Juice', '3.99', '3.77', 99, 'product-featured-131.png', '<p>Refreshing fruit juice, packed with vitamins and great for staying hydrated.<br></p>', '', '<p>width: 8.97</p><p>height: 12.26</p><p>depth: 15.05</p>', '<p>1 week warranty</p><p>Ships in 1-2 business days</p><p>In Stock</p>', '<p>90 days return policy<br></p>', 0, 0, 1, 78),
 (30, 'Kiwi', '2.49', '2.23', 1, 'product-featured-132.png', '<p>Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.<br></p>', '', '<p>width: 27.3</p><p>height: 7.48</p><p>depth: 15.08</p>', '<p>6 months warranty</p><p>Ships in 3-5 business days</p><p>Low Stock</p>', '<p>7 days return policy<br></p>', 0, 0, 1, 78),
 (31, 'Lemon', '0.79', '0.64', 1, 'product-featured-133.png', '<p>Zesty and tangy lemons, versatile for cooking, baking, or making refreshing beverages.<br></p>', '', '<p>width: 25.97</p><p>height: 27.47</p><p>depth: 6.31</p>', '<p>3 year warranty</p><p>Ships in 1 week</p><p>Out of Stock</p>', '<p>90 days return policy<br></p>', 0, 0, 1, 78),
-(32, 'Milk', '3.49', '2.96', 57, 'product-featured-134.png', '<p>Fresh and nutritious milk, a staple for various recipes and daily consumption.<br></p>', '', '<p>width: 22.42</p><p>height: 20.9</p><p>depth: 12.48</p>', '<p>6 months warranty</p><p>shippingInformation: Ships in 1 month</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 0, 0, 1, 78),
-(33, 'Mulberry', '4.99', '4.17', 79, 'product-featured-135.png', '<p>Sweet and juicy mulberries, perfect for snacking or adding to desserts and cereals.<br></p>', '', '<p>width: 11.12</p><p>height: 27.3</p><p>depth: 27.57</p>', '<p>3 months warranty</p><p>Ships in 1 month</p><p>In Stock</p>', '<p>60 days return policy<br></p>', 0, 0, 1, 78);
+(32, 'Milk', '3.49', '2.96', 57, 'product-featured-134.png', '<p>Fresh and nutritious milk, a staple for various recipes and daily consumption.<br></p>', '', '<p>width: 22.42</p><p>height: 20.9</p><p>depth: 12.48</p>', '<p>6 months warranty</p><p>shippingInformation: Ships in 1 month</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 5, 0, 1, 78),
+(33, 'Mulberry', '4.99', '4.17', 79, 'product-featured-135.png', '<p>Sweet and juicy mulberries, perfect for snacking or adding to desserts and cereals.<br></p>', '', '<p>width: 11.12</p><p>height: 27.3</p><p>depth: 27.57</p>', '<p>3 months warranty</p><p>Ships in 1 month</p><p>In Stock</p>', '<p>60 days return policy<br></p>', 0, 0, 1, 78),
+(136, 'Nescafe Coffee', '11.65', '10.71', 22, 'product-featured-136.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">Quality coffee from Nescafe, available in various blends for a rich and satisfying cup.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/33/description\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/33/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/33/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">11.21</span></span></td></tr><tr id=\"/products/33/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">24.54</span></span></td></tr><tr id=\"/products/33/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">15.05</span></span></td></tr><tr id=\"/products/33/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 3-5 business days\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/33/description\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/33/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information  <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"No warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">30 days return policy</span></span></p>', 0, 0, 1, 80),
+(137, 'Potatoes', '2.29', '2.19', 8, 'product-featured-137.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">Versatile and starchy potatoes, great for roasting, mashing, or as a side dish.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/34/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/34/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">20</span></span></td></tr><tr id=\"/products/34/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">6.44</span></span></td></tr><tr id=\"/products/34/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">20.07</span></span></td></tr><tr id=\"/products/34/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 1-2 business days\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/34/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/34/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"5 year warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">7 days return policy</span></span></p>', 0, 0, 1, 81),
+(138, 'Protein Powder', '19.99', '19.67', 65, 'product-featured-138.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">Nutrient-packed protein powder, ideal for supplementing your diet with essential proteins.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/35/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/35/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/35/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">5.62</span></span></td></tr><tr id=\"/products/35/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">7.88</span></span></td></tr><tr id=\"/products/35/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">23.48</span></span></td></tr><tr id=\"/products/35/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"Ships in 1-2 business days\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/35/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/35/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"1 year warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">No return policy</span></span></p>', 0, 0, 1, 76),
+(139, 'Red Onions', '1.99', '1.63', 86, 'product-featured-139.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">Flavorful and aromatic red onions, perfect for adding depth to your savory dishes.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/36/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/36/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/36/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">14.05</span></span></td></tr><tr id=\"/products/36/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">17.13</span></span></td></tr><tr id=\"/products/36/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">14.05</span></span></td></tr><tr id=\"/products/36/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"Ships in 2 weeks\"</span></span></td></tr><tr id=\"/products/36/availabilityStatus\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><br></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><br></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/36/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/36/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"Lifetime warranty\"</span></span></td></tr></tbody></table>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">60 days return policy</span></span></p>', 0, 0, 1, 82),
+(140, 'Red Onions', '1.99', '1.63', 86, 'product-featured-140.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">Flavorful and aromatic red onions, perfect for adding depth to your savory dishes.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/36/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/36/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/36/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">14.05</span></span></td></tr><tr id=\"/products/36/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">17.13</span></span></td></tr><tr id=\"/products/36/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">14.05</span></span></td></tr><tr id=\"/products/36/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"Ships in 2 weeks\"</span></span></td></tr><tr id=\"/products/36/availabilityStatus\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><br></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><br></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/36/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/36/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"Lifetime warranty\"</span></span></td></tr></tbody></table>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">60 days return policy</span></span></p>', 0, 0, 1, 82),
+(141, 'Rice', '5.99', '5.27', 49, 'product-featured-141.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">High-quality rice, a staple for various cuisines and a versatile base for many dishes.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/37/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/37/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/37/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">28.86</span></span></td></tr><tr id=\"/products/37/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">6.26</span></span></td></tr><tr id=\"/products/37/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">11.04</span></span></td></tr><tr id=\"/products/37/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 1 month\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/37/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/37/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"2 year warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">60 days return policy</span></span></p>', 0, 0, 1, 83),
+(142, 'Soft Drinks', '1.99', '1.95', 78, 'product-featured-142.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">Assorted soft drinks in various flavors, perfect for refreshing beverages.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/38/shippingInformation\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/38/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/38/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">15.73</span></span></td></tr><tr id=\"/products/38/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">24.93</span></span></td></tr><tr id=\"/products/38/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">27.19</span></span></td></tr><tr id=\"/products/38/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" class=\"treeRow stringRow selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"Ships in 3-5 business days\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/38/shippingInformation\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/38/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"1 year warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">90 days return policy</span></span></p>', 0, 0, 1, 84),
+(143, 'Strawberry', '3.99', '3.20', 9, 'product-featured-143.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">Sweet and succulent strawberries, great for snacking, desserts, or blending into smoothies.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/39/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/39/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/39/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">20.82</span></span></td></tr><tr id=\"/products/39/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">15.81</span></span></td></tr><tr id=\"/products/39/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">14.89</span></span></td></tr><tr id=\"/products/39/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 1 week\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/39/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/39/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"1 year warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">30 days return policy</span></span></p>', 0, 0, 1, 85);
+INSERT INTO `tbl_product` (`p_id`, `p_name`, `p_old_price`, `p_current_price`, `p_qty`, `p_featured_photo`, `p_description`, `p_short_description`, `p_feature`, `p_condition`, `p_return_policy`, `p_total_view`, `p_is_featured`, `p_is_active`, `ecat_id`) VALUES
+(144, 'Tissue Paper Box', '2.49', '2.10', 97, 'product-featured-144.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">Convenient tissue paper box for everyday use, providing soft and absorbent tissues.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/40/description\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/40/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/40/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">24.1</span></span></td></tr><tr id=\"/products/40/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">19.74</span></span></td></tr><tr id=\"/products/40/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">5.48</span></span></td></tr><tr id=\"/products/40/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"Ships in 1 month\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/40/description\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/40/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"6 months warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">No return policy</span></span></p>', 0, 0, 1, 73),
+(145, 'Water', '0.99', '0.85', 95, 'product-featured-145.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">Pure and refreshing bottled water, essential for staying hydrated throughout the day.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/41/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/41/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/41/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">25.46</span></span></td></tr><tr id=\"/products/41/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">25.86</span></span></td></tr><tr id=\"/products/41/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">18.06</span></span></td></tr><tr id=\"/products/41/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 1 week\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/41/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/41/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"No warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">7 days return policy</span></span></p>', 0, 0, 1, 84),
+(146, 'Decoration Swing', '59.99', '20.99', 62, 'product-featured-146.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The Decoration Swing is a charming addition to your home decor. Crafted with intricate details, it adds a touch of elegance and whimsy to any room.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/42/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/42/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/42/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">20.75</span></span></td></tr><tr id=\"/products/42/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">11.18</span></span></td></tr><tr id=\"/products/42/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">7.92</span></span></td></tr><tr id=\"/products/42/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 2 weeks\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/42/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/42/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Lifetime warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">30 days return policy</span></span></p>', 0, 0, 1, 86),
+(147, 'Family Tree Photo Frame', '29.99', '29.53', 34, 'product-featured-147.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The Family Tree Photo Frame is a sentimental and stylish way to display your cherished family memories. With multiple photo slots, it tells the story of your loved ones.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/43/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/43/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/43/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">15.46</span></span></td></tr><tr id=\"/products/43/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">26.32</span></span></td></tr><tr id=\"/products/43/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">17.1</span></span></td></tr><tr id=\"/products/43/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 1 month\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/43/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/43/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"6 months warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">90 days return policy</span></span></p>', 0, 0, 1, 86),
+(148, 'House Showpiece Plant', '39.99', '32.21', 89, 'product-featured-148.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The House Showpiece Plant is an artificial plant that brings a touch of nature to your home without the need for maintenance. It adds greenery and style to any space.</span></span></p>', '<p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/44/warrantyInformation\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/44/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/44/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">27.15</span></span></td></tr><tr id=\"/products/44/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">14.43</span></span></td></tr><tr id=\"/products/44/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">10.05</span></span></td></tr><tr id=\"/products/44/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 1 week\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/44/warrantyInformation\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/44/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" class=\"treeRow stringRow selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"5 year warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">7 days return policy</span></span></p>', 0, 0, 1, 86),
+(149, 'Plant Pot', '14.99', '14.96', 70, 'product-featured-149.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The Plant Pot is a stylish container for your favorite plants. With a sleek design, it complements your indoor or outdoor garden, adding a modern touch to your plant display.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/45/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/45/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/45/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">16.28</span></span></td></tr><tr id=\"/products/45/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">8.72</span></span></td></tr><tr id=\"/products/45/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">18.47</span></span></td></tr><tr id=\"/products/45/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 1-2 business days\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/45/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/45/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"2 year warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">90 days return policy</span></span></p>', 0, 0, 1, 86),
+(150, 'Table Lamp', '49.99', '49.69', 84, 'product-featured-150.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/46/shippingInformation\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/46/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/46/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">29.6</span></span></td></tr><tr id=\"/products/46/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">19.68</span></span></td></tr><tr id=\"/products/46/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">10.12</span></span></td></tr><tr id=\"/products/46/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" class=\"treeRow stringRow selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"Ships in 2 weeks\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/46/shippingInformation\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/46/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow opened\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon open\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"1 year warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">30 days return policy</span></span></p>', 0, 0, 1, 86),
+(151, 'Bamboo Spatula', '7.99', '7.60', 1, 'product-featured-151.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The Bamboo Spatula is a versatile kitchen tool made from eco-friendly bamboo. Ideal for flipping, stirring, and serving various dishes.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/47/shippingInformation\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/47/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/47/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">27.97</span></span></td></tr><tr id=\"/products/47/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">21.77</span></span></td></tr><tr id=\"/products/47/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">21.38</span></span></td></tr><tr id=\"/products/47/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" class=\"treeRow stringRow selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"Ships in 1 month\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/47/shippingInformation\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/47/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow opened\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon open\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"1 year warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">7 days return policy</span></span></p>', 0, 0, 1, 87),
+(152, 'Black Aluminium Cup', '5.99', '543', 42, 'product-featured-152.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The Black Aluminium Cup is a stylish and durable cup suitable for both hot and cold beverages. Its sleek black design adds a modern touch to your drinkware collection.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/48/shippingInformation\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/48/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/48/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">7.48</span></span></td></tr><tr id=\"/products/48/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">23.98</span></span></td></tr><tr id=\"/products/48/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">12.84</span></span></td></tr><tr id=\"/products/48/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" class=\"treeRow stringRow selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 1 week\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/48/shippingInformation\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/48/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Lifetime warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">7 days return policy</span></span></p>', 0, 0, 1, 87),
+(153, 'Black Whisk', '9.99', '8.30', 17, 'product-featured-153.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The Black Whisk is a kitchen essential for whisking and beating ingredients. Its ergonomic handle and sleek design make it a practical and stylish tool.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/49/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/49/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/49/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">21.06</span></span></td></tr><tr id=\"/products/49/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">15.46</span></span></td></tr><tr id=\"/products/49/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">13.28</span></span></td></tr><tr id=\"/products/49/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 3-5 business days\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/49/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/49/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"5 year warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">30 days return policy</span></span></p>', 0, 0, 1, 87),
+(154, 'Boxed Blender', '39.99', '37.04', 81, 'product-featured-154.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The Boxed Blender is a powerful and compact blender perfect for smoothies, shakes, and more. Its convenient design and multiple functions make it a versatile kitchen appliance.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/50/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/50/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/50/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">16.73</span></span></td></tr><tr id=\"/products/50/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">10.93</span></span></td></tr><tr id=\"/products/50/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">14.75</span></span></td></tr><tr id=\"/products/50/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 2 weeks\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/50/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/50/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"3 months warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">30 days return policy</span></span></p>', 0, 0, 1, 87);
+INSERT INTO `tbl_product` (`p_id`, `p_name`, `p_old_price`, `p_current_price`, `p_qty`, `p_featured_photo`, `p_description`, `p_short_description`, `p_feature`, `p_condition`, `p_return_policy`, `p_total_view`, `p_is_featured`, `p_is_active`, `ecat_id`) VALUES
+(155, 'Carbon Steel Wok', '29.99', '27.32', 2, 'product-featured-155.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The Carbon Steel Wok is a versatile cooking pan suitable for stir-frying, sautéing, and deep frying. Its sturdy construction ensures even heat distribution for delicious meals.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/51/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/51/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon theme-twisty open\" role=\"presentation\"></span><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/51/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">14.69</span></span></td></tr><tr id=\"/products/51/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">11.23</span></span></td></tr><tr id=\"/products/51/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">28.05</span></span></td></tr><tr id=\"/products/51/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 1 month\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/51/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/51/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"2 year warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">30 days return policy</span></span></p>', 0, 0, 1, 87),
+(156, 'Chopping Board', '12.99', '10.68', 53, 'product-featured-156.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The Chopping Board is an essential kitchen accessory for food preparation. Made from durable material, it provides a safe and hygienic surface for cutting and chopping.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/52/dimensions/height\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/52/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/52/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">24.38</span></span></td></tr><tr id=\"/products/52/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"true\" class=\"treeRow numberRow selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">26.51</span></span></td></tr><tr id=\"/products/52/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">6.93</span></span></td></tr><tr id=\"/products/52/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 1-2 business days\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/52/dimensions/height\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/52/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Lifetime warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">90 days return policy</span></span></p>', 0, 0, 1, 87),
+(157, 'Citrus Squeezer Yellow', '8.99', '7.87', 59, 'product-featured-157.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The Citrus Squeezer in Yellow is a handy tool for extracting juice from citrus fruits. Its vibrant color adds a cheerful touch to your kitchen gadgets.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/53/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/53/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/53/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">21.74</span></span></td></tr><tr id=\"/products/53/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">7.6</span></span></td></tr><tr id=\"/products/53/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">18.04</span></span></td></tr><tr id=\"/products/53/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships overnight\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/53/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/53/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"3 year warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">No return policy</span></span></p>', 0, 0, 1, 87),
+(158, 'Egg Slicer', '6.99', '6.31', 30, 'product-featured-158.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The Egg Slicer is a convenient tool for slicing boiled eggs evenly. It\'s perfect for salads, sandwiches, and other dishes where sliced eggs are desired.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/54/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/54/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/54/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">17.18</span></span></td></tr><tr id=\"/products/54/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">11.58</span></span></td></tr><tr id=\"/products/54/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">11.79</span></span></td></tr><tr id=\"/products/54/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 1 week\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/54/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/54/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information  <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"5 year warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">60 days return policy</span></span></p>', 0, 0, 1, 87),
+(159, 'Electric Stove', '49.99', '46.66', 41, 'product-featured-159.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The Electric Stove provides a portable and efficient cooking solution. Ideal for small kitchens or as an additional cooking surface for various culinary needs.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/55/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/55/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/55/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">28.07</span></span></td></tr><tr id=\"/products/55/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">11.43</span></span></td></tr><tr id=\"/products/55/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">20.68</span></span></td></tr><tr id=\"/products/55/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information&nbsp; <br></span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"Ships in 2 weeks\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/55/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/55/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">\"6 months warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">No return policy</span></span></p>', 0, 0, 1, 88),
+(160, 'Fine Mesh Strainer', '9.99', '9.73', 32, 'product-featured-160.png', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">The Fine Mesh Strainer is a versatile tool for straining liquids and sifting dry ingredients. Its fine mesh ensures efficient filtering for smooth cooking and baking.</span></span></p>', '', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/56/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/56/dimensions\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"true\" aria-expanded=\"true\" class=\"treeRow objectRow hasChildren opened selected\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeLabel objectLabel\" aria-labelledby=\"default\" data-level=\"2\">dimensions</span></td><td class=\"treeValueCell objectCell\" role=\"presentation\"><span aria-labelledby=\"value\"></span><br></td></tr><tr id=\"/products/56/dimensions/width\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">width</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">5.19</span></span></td></tr><tr id=\"/products/56/dimensions/height\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">height</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">9.64</span></span></td></tr><tr id=\"/products/56/dimensions/depth\" role=\"treeitem\" aria-level=\"4\" aria-selected=\"false\" class=\"treeRow numberRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 48px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel numberLabel\" aria-labelledby=\"default\" data-level=\"3\">depth</span></td><td class=\"treeValueCell numberCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-number\">20.53</span></span></td></tr><tr id=\"/products/56/shippingInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">shipping Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"Ships in 2 weeks\"</span></span></td></tr></tbody></table><p><br></p>', '<table class=\"treeTable\" role=\"tree\" tabindex=\"0\" aria-label=\"\" cellpadding=\"0\" cellspacing=\"0\" aria-activedescendant=\"/products/56/dimensions\"><tbody role=\"presentation\" tabindex=\"-1\"><tr id=\"/products/56/warrantyInformation\" role=\"treeitem\" aria-level=\"3\" aria-selected=\"false\" class=\"treeRow stringRow\"><td class=\"treeLabelCell\" style=\"--tree-label-cell-indent: 32px;\" role=\"presentation\"><span class=\"treeIcon\" role=\"presentation\"></span><span class=\"treeLabel stringLabel\" aria-labelledby=\"default\" data-level=\"2\">warranty Information</span></td><td class=\"treeValueCell stringCell\" role=\"presentation\"><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">&nbsp;\"1 week warranty\"</span></span></td></tr></tbody></table><p><br></p>', '<p><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">90 days return policy</span></span></p>', 0, 0, 1, 87);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_product_color`
+-- Table structure for table `tbl_product_color`
 --
 
 CREATE TABLE `tbl_product_color` (
@@ -980,11 +1021,10 @@ CREATE TABLE `tbl_product_color` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_product_color`
+-- Dumping data for table `tbl_product_color`
 --
 
 INSERT INTO `tbl_product_color` (`id`, `color_id`, `p_id`) VALUES
-(77, 6, 6),
 (82, 2, 12),
 (83, 9, 13),
 (84, 3, 14),
@@ -1006,7 +1046,6 @@ INSERT INTO `tbl_product_color` (`id`, `color_id`, `p_id`) VALUES
 (100, 7, 29),
 (101, 10, 30),
 (102, 11, 31),
-(103, 14, 32),
 (105, 2, 34),
 (106, 1, 35),
 (107, 3, 36),
@@ -1068,13 +1107,53 @@ INSERT INTO `tbl_product_color` (`id`, `color_id`, `p_id`) VALUES
 (264, 14, 100),
 (266, 6, 101),
 (267, 2, 102),
-(268, 1, 4),
-(269, 1, 107);
+(269, 1, 107),
+(273, 1, 4),
+(274, 6, 6),
+(276, 14, 32),
+(278, 19, 137),
+(279, 23, 136),
+(280, 2, 139),
+(281, 2, 140),
+(282, 2, 141),
+(283, 1, 143),
+(284, 2, 144),
+(285, 2, 146),
+(286, 8, 146),
+(287, 2, 147),
+(288, 8, 147),
+(289, 5, 148),
+(290, 17, 148),
+(291, 19, 148),
+(292, 1, 149),
+(293, 2, 149),
+(294, 3, 149),
+(295, 4, 149),
+(296, 5, 149),
+(297, 6, 149),
+(298, 2, 150),
+(299, 6, 150),
+(300, 10, 150),
+(301, 25, 150),
+(302, 27, 150),
+(303, 28, 150),
+(304, 29, 150),
+(305, 15, 151),
+(306, 2, 152),
+(307, 20, 153),
+(308, 2, 154),
+(309, 20, 155),
+(310, 4, 156),
+(311, 8, 156),
+(312, 4, 157),
+(314, 4, 158),
+(315, 2, 159),
+(316, 20, 160);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_product_photo`
+-- Table structure for table `tbl_product_photo`
 --
 
 CREATE TABLE `tbl_product_photo` (
@@ -1084,7 +1163,7 @@ CREATE TABLE `tbl_product_photo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_product_photo`
+-- Dumping data for table `tbl_product_photo`
 --
 
 INSERT INTO `tbl_product_photo` (`pp_id`, `photo`, `p_id`) VALUES
@@ -1176,7 +1255,7 @@ INSERT INTO `tbl_product_photo` (`pp_id`, `photo`, `p_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_product_size`
+-- Table structure for table `tbl_product_size`
 --
 
 CREATE TABLE `tbl_product_size` (
@@ -1186,11 +1265,10 @@ CREATE TABLE `tbl_product_size` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_product_size`
+-- Dumping data for table `tbl_product_size`
 --
 
 INSERT INTO `tbl_product_size` (`id`, `size_id`, `p_id`) VALUES
-(44, 1, 6),
 (56, 8, 12),
 (57, 9, 12),
 (58, 10, 12),
@@ -1254,7 +1332,6 @@ INSERT INTO `tbl_product_size` (`id`, `size_id`, `p_id`) VALUES
 (116, 3, 30),
 (117, 4, 30),
 (118, 23, 31),
-(119, 26, 32),
 (123, 2, 34),
 (124, 2, 35),
 (125, 2, 36),
@@ -1378,12 +1455,21 @@ INSERT INTO `tbl_product_size` (`id`, `size_id`, `p_id`) VALUES
 (444, 44, 102),
 (445, 45, 102),
 (446, 46, 102),
-(447, 47, 102);
+(447, 47, 102),
+(448, 1, 6),
+(450, 26, 32),
+(451, 27, 153),
+(452, 27, 154),
+(453, 27, 155),
+(454, 27, 156),
+(455, 27, 157),
+(457, 27, 158),
+(458, 27, 160);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_rating`
+-- Table structure for table `tbl_rating`
 --
 
 CREATE TABLE `tbl_rating` (
@@ -1397,7 +1483,7 @@ CREATE TABLE `tbl_rating` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_service`
+-- Table structure for table `tbl_service`
 --
 
 CREATE TABLE `tbl_service` (
@@ -1408,7 +1494,7 @@ CREATE TABLE `tbl_service` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_service`
+-- Dumping data for table `tbl_service`
 --
 
 INSERT INTO `tbl_service` (`id`, `title`, `content`, `photo`) VALUES
@@ -1422,7 +1508,7 @@ INSERT INTO `tbl_service` (`id`, `title`, `content`, `photo`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_settings`
+-- Table structure for table `tbl_settings`
 --
 
 CREATE TABLE `tbl_settings` (
@@ -1500,16 +1586,16 @@ CREATE TABLE `tbl_settings` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_settings`
+-- Dumping data for table `tbl_settings`
 --
 
 INSERT INTO `tbl_settings` (`id`, `logo`, `favicon`, `footer_about`, `footer_copyright`, `contact_address`, `contact_email`, `contact_phone`, `contact_fax`, `contact_map_iframe`, `receive_email`, `receive_email_subject`, `receive_email_thank_you_message`, `forget_password_message`, `total_recent_post_footer`, `total_popular_post_footer`, `total_recent_post_sidebar`, `total_popular_post_sidebar`, `total_featured_product_home`, `total_latest_product_home`, `total_popular_product_home`, `meta_title_home`, `meta_keyword_home`, `meta_description_home`, `banner_login`, `banner_registration`, `banner_forget_password`, `banner_reset_password`, `banner_search`, `banner_cart`, `banner_checkout`, `banner_product_category`, `banner_blog`, `cta_title`, `cta_content`, `cta_read_more_text`, `cta_read_more_url`, `cta_photo`, `featured_product_title`, `featured_product_subtitle`, `latest_product_title`, `latest_product_subtitle`, `popular_product_title`, `popular_product_subtitle`, `testimonial_title`, `testimonial_subtitle`, `testimonial_photo`, `blog_title`, `blog_subtitle`, `newsletter_text`, `paypal_email`, `stripe_public_key`, `stripe_secret_key`, `bank_detail`, `before_head`, `after_body`, `before_body`, `home_service_on_off`, `home_welcome_on_off`, `home_featured_product_on_off`, `home_latest_product_on_off`, `home_popular_product_on_off`, `home_testimonial_on_off`, `home_blog_on_off`, `newsletter_on_off`, `ads_above_welcome_on_off`, `ads_above_featured_product_on_off`, `ads_above_latest_product_on_off`, `ads_above_popular_product_on_off`, `ads_above_testimonial_on_off`, `ads_category_sidebar_on_off`) VALUES
-(1, 'logo.jpeg', 'favicon.png', '<p>Lorem ipsum dolor sit amet, omnis signiferumque in mei, mei ex enim concludaturque. Senserit salutandi euripidis no per, modus maiestatis scribentur est an.Â Ea suas pertinax has.</p>\r\n', '', '', '', '', '', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.020958405712!2d-84.39261378514685!3d39.151504939531584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8841acfb8da30203%3A0x193175e741781f21!2s4293%20Simpson%20Ave%2C%20Cincinnati%2C%20OH%2045227%2C%20USA!5e0!3m2!1sen!2snp!4v1647796779407!5m2!1sen!2snp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>', 'support@ecommercephp.com', 'Mensaje de correo electrónico del visitante desde el sitio.', 'Gracias por enviar un correo electrónico. Nos comunicaremos con usted en breve.', 'Se envía un enlace de confirmación a su dirección de correo electrónico. Obtendrá la información para restablecer la contraseña allí.', 4, 4, 5, 5, 5, 6, 8, 'PAPU TIENDA', '', '', 'banner_login.jpg', 'banner_registration.jpg', 'banner_forget_password.jpg', 'banner_reset_password.jpg', 'banner_search.jpg', 'banner_cart.jpg', 'banner_checkout.jpg', 'banner_product_category.jpg', 'banner_blog.jpg', 'Bienvenido a nuestro sitio web PAPU TIENDA', 'Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, \r\nat usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. ', 'Leer más', '#', 'cta.jpg', 'PRODUCTOS DESTACADOS', 'Nuestra lista de productos destacados', 'ÚLTIMOS PRODUCTOS', 'Nuestra lista de productos agregados recientemente', 'PRODUCTOS POPULARES', 'Productos populares basados en la elección del cliente', 'Testimonios', 'Vea lo que nuestros clientes dicen de nosotros.', 'testimonial.jpg', 'Blog más reciente', 'Vea todos nuestros últimos artículos y noticias desde abajo.', '', 'admin@ecom.com', 'pk_test_0SwMWadgu8DwmEcPdUPRsZ7b', 'sk_test_TFcsLJ7xxUtpALbDo1L5c1PN', 'Bank Name: WestView Bank\r\nAccount Number: CA100270589600\r\nBranch Name: CA Branch\r\nCountry: USA', '', '<div id=\"fb-root\"></div>\r\n<script>(function(d, s, id) {\r\n  var js, fjs = d.getElementsByTagName(s)[0];\r\n  if (d.getElementById(id)) return;\r\n  js = d.createElement(s); js.id = id;\r\n  js.src = \"//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=323620764400430\";\r\n  fjs.parentNode.insertBefore(js, fjs);\r\n}(document, \'script\', \'facebook-jssdk\'));</script>', '<!--Start of Tawk.to Script-->\r\n<script type=\"text/javascript\">\r\nvar Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();\r\n(function(){\r\nvar s1=document.createElement(\"script\"),s0=document.getElementsByTagName(\"script\")[0];\r\ns1.async=true;\r\ns1.src=\'https://embed.tawk.to/5ae370d7227d3d7edc24cb96/default\';\r\ns1.charset=\'UTF-8\';\r\ns1.setAttribute(\'crossorigin\',\'*\');\r\ns0.parentNode.insertBefore(s1,s0);\r\n})();\r\n</script>\r\n<!--End of Tawk.to Script-->', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+(1, 'logo.png', 'favicon.png', '<p>Lorem ipsum dolor sit amet, omnis signiferumque in mei, mei ex enim concludaturque. Senserit salutandi euripidis no per, modus maiestatis scribentur est an.Â Ea suas pertinax has.</p>\r\n', '', '', '', '', '', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.020958405712!2d-84.39261378514685!3d39.151504939531584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8841acfb8da30203%3A0x193175e741781f21!2s4293%20Simpson%20Ave%2C%20Cincinnati%2C%20OH%2045227%2C%20USA!5e0!3m2!1sen!2snp!4v1647796779407!5m2!1sen!2snp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>', 'support@ecommercephp.com', 'Mensaje de correo electrónico del visitante desde el sitio.', 'Gracias por enviar un correo electrónico. Nos comunicaremos con usted en breve.', 'Se envía un enlace de confirmación a su dirección de correo electrónico. Obtendrá la información para restablecer la contraseña allí.', 4, 4, 5, 5, 5, 6, 8, 'PAPJ Tienda', '', '', 'banner_login.jpg', 'banner_registration.jpg', 'banner_forget_password.jpg', 'banner_reset_password.jpg', 'banner_search.jpg', 'banner_cart.jpg', 'banner_checkout.jpg', 'banner_product_category.jpg', 'banner_blog.jpg', 'Bienvenido a nuestro sitio web PAPJ', 'Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, \r\nat usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. ', 'Leer más', '#', 'cta.jpg', 'PRODUCTOS DESTACADOS', 'Nuestra lista de productos destacados', 'ÚLTIMOS PRODUCTOS', 'Nuestra lista de productos agregados recientemente', 'PRODUCTOS POPULARES', 'Productos populares basados en la elección del cliente', 'Testimonios', 'Vea lo que nuestros clientes dicen de nosotros.', 'testimonial.jpg', 'Blog más reciente', 'Vea todos nuestros últimos artículos y noticias desde abajo.', '', 'admin@ecom.com', 'pk_test_0SwMWadgu8DwmEcPdUPRsZ7b', 'sk_test_TFcsLJ7xxUtpALbDo1L5c1PN', 'Bank Name: WestView Bank\r\nAccount Number: CA100270589600\r\nBranch Name: CA Branch\r\nCountry: USA', '', '<div id=\"fb-root\"></div>\r\n<script>(function(d, s, id) {\r\n  var js, fjs = d.getElementsByTagName(s)[0];\r\n  if (d.getElementById(id)) return;\r\n  js = d.createElement(s); js.id = id;\r\n  js.src = \"//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=323620764400430\";\r\n  fjs.parentNode.insertBefore(js, fjs);\r\n}(document, \'script\', \'facebook-jssdk\'));</script>', '<!--Start of Tawk.to Script-->\r\n<script type=\"text/javascript\">\r\nvar Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();\r\n(function(){\r\nvar s1=document.createElement(\"script\"),s0=document.getElementsByTagName(\"script\")[0];\r\ns1.async=true;\r\ns1.src=\'https://embed.tawk.to/5ae370d7227d3d7edc24cb96/default\';\r\ns1.charset=\'UTF-8\';\r\ns1.setAttribute(\'crossorigin\',\'*\');\r\ns0.parentNode.insertBefore(s1,s0);\r\n})();\r\n</script>\r\n<!--End of Tawk.to Script-->', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_shipping_cost`
+-- Table structure for table `tbl_shipping_cost`
 --
 
 CREATE TABLE `tbl_shipping_cost` (
@@ -1519,7 +1605,7 @@ CREATE TABLE `tbl_shipping_cost` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_shipping_cost`
+-- Dumping data for table `tbl_shipping_cost`
 --
 
 INSERT INTO `tbl_shipping_cost` (`shipping_cost_id`, `country_id`, `amount`) VALUES
@@ -1531,7 +1617,7 @@ INSERT INTO `tbl_shipping_cost` (`shipping_cost_id`, `country_id`, `amount`) VAL
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_shipping_cost_all`
+-- Table structure for table `tbl_shipping_cost_all`
 --
 
 CREATE TABLE `tbl_shipping_cost_all` (
@@ -1540,7 +1626,7 @@ CREATE TABLE `tbl_shipping_cost_all` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_shipping_cost_all`
+-- Dumping data for table `tbl_shipping_cost_all`
 --
 
 INSERT INTO `tbl_shipping_cost_all` (`sca_id`, `amount`) VALUES
@@ -1549,7 +1635,7 @@ INSERT INTO `tbl_shipping_cost_all` (`sca_id`, `amount`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_size`
+-- Table structure for table `tbl_size`
 --
 
 CREATE TABLE `tbl_size` (
@@ -1558,7 +1644,7 @@ CREATE TABLE `tbl_size` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_size`
+-- Dumping data for table `tbl_size`
 --
 
 INSERT INTO `tbl_size` (`size_id`, `size_name`) VALUES
@@ -1613,7 +1699,7 @@ INSERT INTO `tbl_size` (`size_id`, `size_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_slider`
+-- Table structure for table `tbl_slider`
 --
 
 CREATE TABLE `tbl_slider` (
@@ -1627,7 +1713,7 @@ CREATE TABLE `tbl_slider` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_slider`
+-- Dumping data for table `tbl_slider`
 --
 
 INSERT INTO `tbl_slider` (`id`, `photo`, `heading`, `content`, `button_text`, `button_url`, `position`) VALUES
@@ -1638,7 +1724,7 @@ INSERT INTO `tbl_slider` (`id`, `photo`, `heading`, `content`, `button_text`, `b
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_social`
+-- Table structure for table `tbl_social`
 --
 
 CREATE TABLE `tbl_social` (
@@ -1649,7 +1735,7 @@ CREATE TABLE `tbl_social` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_social`
+-- Dumping data for table `tbl_social`
 --
 
 INSERT INTO `tbl_social` (`social_id`, `social_name`, `social_url`, `social_icon`) VALUES
@@ -1658,7 +1744,7 @@ INSERT INTO `tbl_social` (`social_id`, `social_name`, `social_url`, `social_icon
 (3, 'LinkedIn', '', 'fa fa-linkedin'),
 (4, 'Google Plus', '', 'fa fa-google-plus'),
 (5, 'Pinterest', '', 'fa fa-pinterest'),
-(6, 'YouTube', 'https://www.youtube.com/#', 'fa fa-youtube'),
+(6, 'YouTube', 'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?playlist=dQw4w9WgXcQ&autoplay=1&iv_load_policy=3&loop=1&start=', 'fa fa-youtube'),
 (7, 'Instagram', 'https://www.instagram.com/#', 'fa fa-instagram'),
 (8, 'Tumblr', '', 'fa fa-tumblr'),
 (9, 'Flickr', '', 'fa fa-flickr'),
@@ -1673,7 +1759,7 @@ INSERT INTO `tbl_social` (`social_id`, `social_name`, `social_url`, `social_icon
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_subscriber`
+-- Table structure for table `tbl_subscriber`
 --
 
 CREATE TABLE `tbl_subscriber` (
@@ -1686,7 +1772,7 @@ CREATE TABLE `tbl_subscriber` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_subscriber`
+-- Dumping data for table `tbl_subscriber`
 --
 
 INSERT INTO `tbl_subscriber` (`subs_id`, `subs_email`, `subs_date`, `subs_date_time`, `subs_hash`, `subs_active`) VALUES
@@ -1700,7 +1786,7 @@ INSERT INTO `tbl_subscriber` (`subs_id`, `subs_email`, `subs_date`, `subs_date_t
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_top_category`
+-- Table structure for table `tbl_top_category`
 --
 
 CREATE TABLE `tbl_top_category` (
@@ -1710,7 +1796,7 @@ CREATE TABLE `tbl_top_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_top_category`
+-- Dumping data for table `tbl_top_category`
 --
 
 INSERT INTO `tbl_top_category` (`tcat_id`, `tcat_name`, `show_on_menu`) VALUES
@@ -1718,12 +1804,13 @@ INSERT INTO `tbl_top_category` (`tcat_id`, `tcat_name`, `show_on_menu`) VALUES
 (2, 'Mujeres', 1),
 (3, 'Niños', 1),
 (4, 'Electrónicos', 1),
-(5, 'Salud y Hogar', 1);
+(5, 'Salud y Hogar', 1),
+(6, 'Comestibles', 0);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_user`
+-- Table structure for table `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -1738,7 +1825,7 @@ CREATE TABLE `tbl_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_user`
+-- Dumping data for table `tbl_user`
 --
 
 INSERT INTO `tbl_user` (`id`, `full_name`, `email`, `phone`, `password`, `photo`, `role`, `status`) VALUES
@@ -1748,7 +1835,7 @@ INSERT INTO `tbl_user` (`id`, `full_name`, `email`, `phone`, `password`, `photo`
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_video`
+-- Table structure for table `tbl_video`
 --
 
 CREATE TABLE `tbl_video` (
@@ -1758,7 +1845,7 @@ CREATE TABLE `tbl_video` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Volcado de datos para la tabla `tbl_video`
+-- Dumping data for table `tbl_video`
 --
 
 INSERT INTO `tbl_video` (`id`, `title`, `iframe_code`) VALUES
@@ -1767,357 +1854,357 @@ INSERT INTO `tbl_video` (`id`, `title`, `iframe_code`) VALUES
 (4, 'Video 3', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ViZNgU-Yt-Y\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>');
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `tbl_color`
+-- Indexes for table `tbl_color`
 --
 ALTER TABLE `tbl_color`
   ADD PRIMARY KEY (`color_id`);
 
 --
--- Indices de la tabla `tbl_country`
+-- Indexes for table `tbl_country`
 --
 ALTER TABLE `tbl_country`
   ADD PRIMARY KEY (`country_id`);
 
 --
--- Indices de la tabla `tbl_customer`
+-- Indexes for table `tbl_customer`
 --
 ALTER TABLE `tbl_customer`
   ADD PRIMARY KEY (`cust_id`);
 
 --
--- Indices de la tabla `tbl_customer_message`
+-- Indexes for table `tbl_customer_message`
 --
 ALTER TABLE `tbl_customer_message`
   ADD PRIMARY KEY (`customer_message_id`);
 
 --
--- Indices de la tabla `tbl_end_category`
+-- Indexes for table `tbl_end_category`
 --
 ALTER TABLE `tbl_end_category`
   ADD PRIMARY KEY (`ecat_id`);
 
 --
--- Indices de la tabla `tbl_faq`
+-- Indexes for table `tbl_faq`
 --
 ALTER TABLE `tbl_faq`
   ADD PRIMARY KEY (`faq_id`);
 
 --
--- Indices de la tabla `tbl_language`
+-- Indexes for table `tbl_language`
 --
 ALTER TABLE `tbl_language`
   ADD PRIMARY KEY (`lang_id`);
 
 --
--- Indices de la tabla `tbl_mid_category`
+-- Indexes for table `tbl_mid_category`
 --
 ALTER TABLE `tbl_mid_category`
   ADD PRIMARY KEY (`mcat_id`);
 
 --
--- Indices de la tabla `tbl_order`
+-- Indexes for table `tbl_order`
 --
 ALTER TABLE `tbl_order`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `tbl_page`
+-- Indexes for table `tbl_page`
 --
 ALTER TABLE `tbl_page`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `tbl_payment`
+-- Indexes for table `tbl_payment`
 --
 ALTER TABLE `tbl_payment`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `tbl_photo`
+-- Indexes for table `tbl_photo`
 --
 ALTER TABLE `tbl_photo`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `tbl_post`
+-- Indexes for table `tbl_post`
 --
 ALTER TABLE `tbl_post`
   ADD PRIMARY KEY (`post_id`);
 
 --
--- Indices de la tabla `tbl_product`
+-- Indexes for table `tbl_product`
 --
 ALTER TABLE `tbl_product`
   ADD PRIMARY KEY (`p_id`);
 
 --
--- Indices de la tabla `tbl_product_color`
+-- Indexes for table `tbl_product_color`
 --
 ALTER TABLE `tbl_product_color`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `tbl_product_photo`
+-- Indexes for table `tbl_product_photo`
 --
 ALTER TABLE `tbl_product_photo`
   ADD PRIMARY KEY (`pp_id`);
 
 --
--- Indices de la tabla `tbl_product_size`
+-- Indexes for table `tbl_product_size`
 --
 ALTER TABLE `tbl_product_size`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `tbl_rating`
+-- Indexes for table `tbl_rating`
 --
 ALTER TABLE `tbl_rating`
   ADD PRIMARY KEY (`rt_id`);
 
 --
--- Indices de la tabla `tbl_service`
+-- Indexes for table `tbl_service`
 --
 ALTER TABLE `tbl_service`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `tbl_settings`
+-- Indexes for table `tbl_settings`
 --
 ALTER TABLE `tbl_settings`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `tbl_shipping_cost`
+-- Indexes for table `tbl_shipping_cost`
 --
 ALTER TABLE `tbl_shipping_cost`
   ADD PRIMARY KEY (`shipping_cost_id`);
 
 --
--- Indices de la tabla `tbl_shipping_cost_all`
+-- Indexes for table `tbl_shipping_cost_all`
 --
 ALTER TABLE `tbl_shipping_cost_all`
   ADD PRIMARY KEY (`sca_id`);
 
 --
--- Indices de la tabla `tbl_size`
+-- Indexes for table `tbl_size`
 --
 ALTER TABLE `tbl_size`
   ADD PRIMARY KEY (`size_id`);
 
 --
--- Indices de la tabla `tbl_slider`
+-- Indexes for table `tbl_slider`
 --
 ALTER TABLE `tbl_slider`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `tbl_social`
+-- Indexes for table `tbl_social`
 --
 ALTER TABLE `tbl_social`
   ADD PRIMARY KEY (`social_id`);
 
 --
--- Indices de la tabla `tbl_subscriber`
+-- Indexes for table `tbl_subscriber`
 --
 ALTER TABLE `tbl_subscriber`
   ADD PRIMARY KEY (`subs_id`);
 
 --
--- Indices de la tabla `tbl_top_category`
+-- Indexes for table `tbl_top_category`
 --
 ALTER TABLE `tbl_top_category`
   ADD PRIMARY KEY (`tcat_id`);
 
 --
--- Indices de la tabla `tbl_user`
+-- Indexes for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `tbl_video`
+-- Indexes for table `tbl_video`
 --
 ALTER TABLE `tbl_video`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `tbl_color`
+-- AUTO_INCREMENT for table `tbl_color`
 --
 ALTER TABLE `tbl_color`
   MODIFY `color_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_country`
+-- AUTO_INCREMENT for table `tbl_country`
 --
 ALTER TABLE `tbl_country`
   MODIFY `country_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=246;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_customer`
+-- AUTO_INCREMENT for table `tbl_customer`
 --
 ALTER TABLE `tbl_customer`
   MODIFY `cust_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_customer_message`
+-- AUTO_INCREMENT for table `tbl_customer_message`
 --
 ALTER TABLE `tbl_customer_message`
   MODIFY `customer_message_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_end_category`
+-- AUTO_INCREMENT for table `tbl_end_category`
 --
 ALTER TABLE `tbl_end_category`
-  MODIFY `ecat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
+  MODIFY `ecat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_faq`
+-- AUTO_INCREMENT for table `tbl_faq`
 --
 ALTER TABLE `tbl_faq`
   MODIFY `faq_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_language`
+-- AUTO_INCREMENT for table `tbl_language`
 --
 ALTER TABLE `tbl_language`
   MODIFY `lang_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=164;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_mid_category`
+-- AUTO_INCREMENT for table `tbl_mid_category`
 --
 ALTER TABLE `tbl_mid_category`
-  MODIFY `mcat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `mcat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_order`
+-- AUTO_INCREMENT for table `tbl_order`
 --
 ALTER TABLE `tbl_order`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_page`
+-- AUTO_INCREMENT for table `tbl_page`
 --
 ALTER TABLE `tbl_page`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_payment`
+-- AUTO_INCREMENT for table `tbl_payment`
 --
 ALTER TABLE `tbl_payment`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_photo`
+-- AUTO_INCREMENT for table `tbl_photo`
 --
 ALTER TABLE `tbl_photo`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_post`
+-- AUTO_INCREMENT for table `tbl_post`
 --
 ALTER TABLE `tbl_post`
   MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_product`
+-- AUTO_INCREMENT for table `tbl_product`
 --
 ALTER TABLE `tbl_product`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=161;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_product_color`
+-- AUTO_INCREMENT for table `tbl_product_color`
 --
 ALTER TABLE `tbl_product_color`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=270;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=317;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_product_photo`
+-- AUTO_INCREMENT for table `tbl_product_photo`
 --
 ALTER TABLE `tbl_product_photo`
   MODIFY `pp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=190;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_product_size`
+-- AUTO_INCREMENT for table `tbl_product_size`
 --
 ALTER TABLE `tbl_product_size`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=448;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=459;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_rating`
+-- AUTO_INCREMENT for table `tbl_rating`
 --
 ALTER TABLE `tbl_rating`
   MODIFY `rt_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_service`
+-- AUTO_INCREMENT for table `tbl_service`
 --
 ALTER TABLE `tbl_service`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_settings`
+-- AUTO_INCREMENT for table `tbl_settings`
 --
 ALTER TABLE `tbl_settings`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_shipping_cost`
+-- AUTO_INCREMENT for table `tbl_shipping_cost`
 --
 ALTER TABLE `tbl_shipping_cost`
   MODIFY `shipping_cost_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_shipping_cost_all`
+-- AUTO_INCREMENT for table `tbl_shipping_cost_all`
 --
 ALTER TABLE `tbl_shipping_cost_all`
   MODIFY `sca_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_size`
+-- AUTO_INCREMENT for table `tbl_size`
 --
 ALTER TABLE `tbl_size`
   MODIFY `size_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_slider`
+-- AUTO_INCREMENT for table `tbl_slider`
 --
 ALTER TABLE `tbl_slider`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_social`
+-- AUTO_INCREMENT for table `tbl_social`
 --
 ALTER TABLE `tbl_social`
   MODIFY `social_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_subscriber`
+-- AUTO_INCREMENT for table `tbl_subscriber`
 --
 ALTER TABLE `tbl_subscriber`
   MODIFY `subs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_top_category`
+-- AUTO_INCREMENT for table `tbl_top_category`
 --
 ALTER TABLE `tbl_top_category`
-  MODIFY `tcat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `tcat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_user`
+-- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT de la tabla `tbl_video`
+-- AUTO_INCREMENT for table `tbl_video`
 --
 ALTER TABLE `tbl_video`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
