@@ -99,11 +99,11 @@ foreach ($result as $row) {
 	<link rel="stylesheet" href="assets/css/animate.min.css">
 	<link rel="stylesheet" href="assets/css/tree-menu.css">
 	<link rel="stylesheet" href="assets/css/select2.min.css">
-	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- <link rel="stylesheet" href="assets/css/main.css?v=1.0"> -->
 
 	<?php
-
 	$statement = $pdo->prepare("SELECT * FROM tbl_page WHERE id=1");
 	$statement->execute();
 	$result = $statement->fetchAll(PDO::FETCH_ASSOC);							
@@ -235,6 +235,7 @@ foreach ($result as $row) {
 </head>
 <body>
 
+
 <?php echo $after_body; ?>
 <!--
 <div id="preloader">
@@ -242,7 +243,7 @@ foreach ($result as $row) {
 </div>-->
 
 <!-- top bar -->
-<div class="top">
+<div class="top" >
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6 col-xs-12">

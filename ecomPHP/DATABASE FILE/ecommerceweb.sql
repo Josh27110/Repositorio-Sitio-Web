@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-06-2024 a las 04:08:24
+-- Tiempo de generación: 26-06-2024 a las 04:57:52
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -384,7 +384,7 @@ INSERT INTO `tbl_customer` (`cust_id`, `cust_name`, `cust_cname`, `cust_email`, 
 (8, 'Benjamin B. Louque', 'none', 'benjamin@mail.com', '7777889955', 230, '32 Bridge Street', 'Tulsa', 'OK', '74220', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '5f4dcc3b5aa765d61d8327deb882cf99', '5a0e096368f9669508af7b7203382b07', '2022-03-20 10:36:31', '1647797791', 1),
 (9, 'Joe K. Richardson', 'none', 'joe@mail.com', '4444445555', 230, '17 Derek Drive', 'Youngstown', 'OH', '44500', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '5f4dcc3b5aa765d61d8327deb882cf99', 'e74ac0178d7833988d4b1625c42ba26e', '2022-03-20 10:37:18', '1647797838', 1),
 (10, 'Will Williams', 'Test Company', 'williams@mail.com', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', 'Will Williams', 'Test Company', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', 'Will Williams', 'Test Company', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', '5f4dcc3b5aa765d61d8327deb882cf99', '941c9265fb920f691cf01b12a15f80f8', '2022-03-20 11:15:59', '1647800159', 1),
-(11, 'kein', 'asas', 'kein@gmail.com', '5545230668', 1, 'asas', 'asas', 'asas', '55090', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', 'aa564f4b633415b87546ba99d2d42e36', 'c1dae10f23b2c3756964260634ad69ce', '2024-06-21 10:55:34', '1719035734', 1);
+(12, 'kein', 'asasa', 'kein@mail.com', '5566778899', 19, 'asas', 'asas', 'asas', '55090', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '25d55ad283aa400af464c76d713c07ad', 'bdb83def3bde0538d1600a97c5dbed60', '2024-06-25 07:54:26', '1719370466', 1);
 
 -- --------------------------------------------------------
 
@@ -938,9 +938,9 @@ INSERT INTO `tbl_product` (`p_id`, `p_name`, `p_old_price`, `p_current_price`, `
 (3, 'Powder Canister', '19.03', '12.99', 68, 'product-featured-105.png', '<p>The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.<br></p>', '', '<p>width: 24.16</p><p>height\" 10.7,</p><p>depth: 11.07</p>', '<p>2 year warranty</p><p>shippingInformation: Ships in 1-2 business days</p><p>availabilityStatus: In Stock</p>', '<p>60 days return policy<br></p>', 3, 0, 1, 45),
 (4, 'Red Lipstick', '19.03', '12.99', 68, 'product-featured-106.png', '<p>The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.<br></p>', '', '<p>width: 14.37</p><p>height: 13.94</p><p>depth: 14.6</p>', '<p>Lifetime warranty</p><p>Ships in 2 weeks</p><p>In Stock</p>', '<p>90 days return policy<br></p>', 2, 0, 1, 44),
 (5, 'Red Nail Polish', '8.99', '2.46', 71, 'product-featured-107.png', '<p>The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.<br></p>', '', '<p>width: 14.37</p><p>height: 13.94</p><p>depth: 14.6</p>', '<p>Lifetime warranty</p><p>Ships in 2 weeks<br></p><p>In Stock</p>', '<p>90 days return policy<br></p>', 2, 0, 1, 46),
-(6, 'Calvin Klein CK One', '49.99', '34', 17, 'product-featured-108.png', '<p>CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It\'s a versatile fragrance suitable for everyday wear.</p>', '', '<p>width: 11.53</p><p>height: 14.44</p><p>depth: 6.81</p>', '<p>5 year warranty</p><p>Ships overnight</p><p>In Stock</p>', '<p>No return policy<br></p>', 1, 0, 1, 59),
-(7, 'Chanel Coco Noir Eau De', '129.99', '105.75', 41, 'product-featured-109.png', '<p>Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.<br></p>', '', '<p>width: 21.27</p><p>height: 28</p><p>depth: 11.89</p>', '<p>1 week warranty</p><p>Ships in 1 month</p><p>In Stock</p>', '<p>60 days return policy<br></p>', 1, 0, 1, 59),
-(8, 'Dior J\'adore', '89.99', '74.29', 91, 'product-featured-110.png', '<p>J\'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.<br></p>', '', '<p>width: 21.51</p><p>height: 7</p><p>depth: 26.51</p>', '<p>Lifetime warranty</p><p>Ships in 2 weeks</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 1, 0, 1, 59),
+(6, 'Calvin Klein CK One', '49.99', '34', 17, 'product-featured-108.png', '<p>CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It\'s a versatile fragrance suitable for everyday wear.</p>', '', '<p>width: 11.53</p><p>height: 14.44</p><p>depth: 6.81</p>', '<p>5 year warranty</p><p>Ships overnight</p><p>In Stock</p>', '<p>No return policy<br></p>', 4, 0, 1, 59),
+(7, 'Chanel Coco Noir Eau De', '129.99', '105.75', 41, 'product-featured-109.png', '<p>Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.<br></p>', '', '<p>width: 21.27</p><p>height: 28</p><p>depth: 11.89</p>', '<p>1 week warranty</p><p>Ships in 1 month</p><p>In Stock</p>', '<p>60 days return policy<br></p>', 2, 0, 1, 59),
+(8, 'Dior J\'adore', '89.99', '74.29', 91, 'product-featured-110.png', '<p>J\'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.<br></p>', '', '<p>width: 21.51</p><p>height: 7</p><p>depth: 26.51</p>', '<p>Lifetime warranty</p><p>Ships in 2 weeks</p><p>In Stock</p>', '<p>7 days return policy<br></p>', 4, 0, 1, 59),
 (9, 'Dolce Shine Eau de', '69.99', '61.96', 3, 'product-featured-111.png', '<p>Dolce Shine by Dolce &amp; Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It\'s a joyful and youthful scent.<br></p>', '', '<p>width: 17</p><p>height: 24.57</p><p>depth: 13.3</p>', '<p>5 year warranty</p><p>Ships in 1-2 business days</p><p>Low Stock</p>', '<p>30 days return policy<br></p>', 3, 0, 1, 39),
 (10, 'Gucci Bloom Eau de', '79.99', '72.87', 93, 'product-featured-112.png', '<p>Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It\'s a modern and romantic scent.<br></p>', '', '<p>width: 22.28</p><p>height: 17.81</p><p>depth: 27.18</p>', '<p>No warranty</p><p>Ships in 2 weeks</p><p>In Stock</p>', '<p>No return policy<br></p>', 1, 0, 1, 39),
 (11, 'Annibale Colombo Bed', '1899.99', '1844.89', 47, 'product-featured-113.png', '<p>The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.<br></p>', '', '<p>width: 28.75</p><p>height: 26.88</p><p>depth: 24.47</p>', '', '<p>2 year warranty</p><p>Ships overnight</p><p>In Stock</p>', 0, 0, 1, 78),
@@ -1964,7 +1964,7 @@ ALTER TABLE `tbl_country`
 -- AUTO_INCREMENT de la tabla `tbl_customer`
 --
 ALTER TABLE `tbl_customer`
-  MODIFY `cust_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `cust_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `tbl_customer_message`
