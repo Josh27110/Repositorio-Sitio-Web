@@ -38,7 +38,6 @@ if(!isset($_SESSION['customer'])) {
                                     <th><?php echo LANG_VALUE_30; ?></th>
                                     <th><?php echo LANG_VALUE_31; ?></th>
                                     <th><?php echo LANG_VALUE_32; ?></th>
-                                    <th>Acciones</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -172,7 +171,6 @@ if(!isset($_SESSION['customer'])) {
                                         <td><?php echo $row['payment_status']; ?></td>
                                         <td><?php echo $row['payment_method']; ?></td>
                                         <td><?php echo $row['payment_id']; ?></td>
-                                        <td><a href="generate-pdf.php?payment_id=<?php echo $row['payment_id']; ?>" class="btn btn-primary">Descargar PDF</a></td>
                                     </tr>
                                     <?php
                                 } 

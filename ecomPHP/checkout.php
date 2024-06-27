@@ -309,12 +309,10 @@ if(!isset($_SESSION['cart_p_id'])) {
 		                    $checkout_access = 0;
 		                }
 		                ?>
-
-                        <!-- Debes de llenar tus datos -->
 		                <?php if($checkout_access == 0): ?>
 		                	<div class="col-md-12">
 				                <div style="color:red;font-size:22px;margin-bottom:50px;">
-			                        Debes de llenar los datos de envío <a href="customer-billing-shipping-update.php" style="color:red;text-decoration:underline;"> link</a>.
+			                        You must have to fill up all the billing and shipping information from your dashboard panel in order to checkout the order. Please fill up the information going to <a href="customer-billing-shipping-update.php" style="color:red;text-decoration:underline;">this link</a>.
 			                    </div>
 	                    	</div>
 	                	<?php else: ?>
@@ -326,7 +324,7 @@ if(!isset($_SESSION['cart_p_id'])) {
 	                                    <label for=""><?php echo LANG_VALUE_34; ?> *</label>
 	                                    <select name="payment_method" class="form-control select2" id="advFieldsStatus">
 	                                        <option value=""><?php echo LANG_VALUE_35; ?></option>
-	                                        <!-- <option value="PayPal"><?php echo LANG_VALUE_36; ?></option> -->
+	                                        <option value="PayPal"><?php echo LANG_VALUE_36; ?></option>
 	                                        <option value="Bank Deposit"><?php echo LANG_VALUE_38; ?></option>
 	                                    </select>
 	                                </div>
@@ -359,7 +357,6 @@ if(!isset($_SESSION['cart_p_id'])) {
                                             }
                                             ?>
                                         </div>
-                                        
                                         <div class="col-md-12 form-group">
                                             <label for=""><?php echo LANG_VALUE_44; ?> <br><span style="font-size:12px;font-weight:normal;">(<?php echo LANG_VALUE_45; ?>)</span></label>
                                             <textarea name="transaction_info" class="form-control" cols="30" rows="10"></textarea>
