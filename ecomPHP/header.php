@@ -99,11 +99,11 @@ foreach ($result as $row) {
 	<link rel="stylesheet" href="assets/css/animate.min.css">
 	<link rel="stylesheet" href="assets/css/tree-menu.css">
 	<link rel="stylesheet" href="assets/css/select2.min.css">
-	<link rel="stylesheet" href="assets/css/responsive.css">
 	<link rel="stylesheet" href="assets/css/main.css">
-	<!-- <link rel="stylesheet" href="assets/css/main.css?v=1.0"> -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
 
 	<?php
+
 	$statement = $pdo->prepare("SELECT * FROM tbl_page WHERE id=1");
 	$statement->execute();
 	$result = $statement->fetchAll(PDO::FETCH_ASSOC);							
@@ -235,7 +235,6 @@ foreach ($result as $row) {
 </head>
 <body>
 
-
 <?php echo $after_body; ?>
 <!--
 <div id="preloader">
@@ -243,7 +242,7 @@ foreach ($result as $row) {
 </div>-->
 
 <!-- top bar -->
-<div class="top" >
+<div class="top">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6 col-xs-12">
@@ -303,7 +302,7 @@ foreach ($result as $row) {
 
 					<li><a href="cart.php"><i class="fa fa-shopping-cart"></i> <?php echo LANG_VALUE_18; ?> (<?php echo LANG_VALUE_1; ?><?php
 					if(isset($_SESSION['cart_p_id'])) {
-						$table_total_price = 0;
+						$table_total_price = 10000;
 						$i=0;
 	                    foreach($_SESSION['cart_p_qty'] as $key => $value) 
 	                    {
@@ -317,11 +316,11 @@ foreach ($result as $row) {
 	                    }
 	                    for($i=1;$i<=count($arr_cart_p_qty);$i++) {
 	                    	$row_total_price = $arr_cart_p_current_price[$i]*$arr_cart_p_qty[$i];
-	                        $table_total_price = $table_total_price + $row_total_price;
+	                        $table_total_price = $table_total_price - $row_total_price;
 	                    }
 						echo $table_total_price;
 					} else {
-						echo '0.00';
+						echo '10,000.00';
 					}
 					?>)</a></li>
 				</ul>

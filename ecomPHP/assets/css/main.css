@@ -74,6 +74,7 @@ a:hover {
 }
 
 .top {
+  display: none;
   width: 100%;
   height: 40px;
   /* background: #ececec; */
@@ -136,7 +137,6 @@ a:hover {
   width: 100%;
   height: auto;
   background: #fff;
-
 }
 
 .header .inner {
@@ -990,6 +990,7 @@ Mobile style's
 }
 
 .footer-bottom {
+  display: none;
   width: 100%;
   height: auto;
   background: #141314;
@@ -2150,3 +2151,4 @@ div.pagination span.disabled {
 }
 
 
+  
