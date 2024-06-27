@@ -55,20 +55,20 @@ if(isset($_POST['form_contact']))
     if(empty($_POST['visitor_name']))
     {
         $valid = 0;
-        $error_message .= 'Por favor, escriba su nombre.\n';
+        $error_message .= 'Please enter your name.\n';
     }
 
     if(empty($_POST['visitor_phone']))
     {
         $valid = 0;
-        $error_message .= 'Por favor, introduzca su número de teléfono.\n';
+        $error_message .= 'Please enter your phone number.\n';
     }
 
 
     if(empty($_POST['visitor_email']))
     {
         $valid = 0;
-        $error_message .= 'Por favor, introduzca su dirección de correo electrónico.\n';
+        $error_message .= 'Please enter your email address.\n';
     }
     else
     {
@@ -76,14 +76,14 @@ if(isset($_POST['form_contact']))
         if(!filter_var($_POST['visitor_email'], FILTER_VALIDATE_EMAIL))
         {
             $valid = 0;
-            $error_message .= 'Por favor, introduce una dirección de correo electrónico válida.\n';
+            $error_message .= 'Please enter a valid email address.\n';
         }
     }
 
     if(empty($_POST['visitor_message']))
     {
         $valid = 0;
-        $error_message .= 'Por favor ingrese su mensaje.\n';
+        $error_message .= 'Please enter your message.\n';
     }
 
     if($valid == 1)
@@ -149,49 +149,50 @@ if(isset($_POST['form_contact']))
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input type="text" class="form-control" name="visitor_name" placeholder="Introduzca su nombre">
+                                        <label for="name">Nombre</label>
+                                        <input type="text" class="form-control" name="visitor_name" placeholder="Introduzca un nombre">
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">Email Address</label>
-                                        <input type="email" class="form-control" name="visitor_email" placeholder="Introduzca su correo electrónico">
+                                        <label for="email">Correo electronico</label>
+                                        <input type="email" class="form-control" name="visitor_email" placeholder="Introduzca un correo">
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">Phone Number</label>
-                                        <input type="text" class="form-control" name="visitor_phone" placeholder="Introduzca su teléfono">
+                                        <label for="email">Telefono celular</label>
+                                        <input type="text" class="form-control" name="visitor_phone" placeholder="Introduzca un telefono">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name">Message</label>
-                                        <textarea name="visitor_message" class="form-control" rows="9" cols="25" placeholder="Introduzca su mensaje"></textarea>
+                                        <label for="name">Mensaje</label>
+                                        <textarea name="visitor_message" class="form-control" rows="9" cols="25" placeholder="Escriba su mensaje"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="submit" value="Send Message" class="btn btn-primary pull-right" name="form_contact">
+                                    <input type="submit" value="Enviar Mensaje" class="btn btn-primary pull-right" name="form_contact">
                                 </div>
                             </div>
                             </form>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <legend><span class="glyphicon glyphicon-globe"></span> Nuestra oficina</legend>
+                        <legend><span class="glyphicon glyphicon-globe"></span>Nuestra oficina</legend>
                         <address>
                             <?php echo nl2br($contact_address); ?>
                         </address>
                         <address>
-                            <strong>Phone:</strong><br>
+                            <strong>Telefono:</strong><br>
                             <span><?php echo $contact_phone; ?></span>
                         </address>
                         <address>
-                            <strong>Email:</strong><br>
+                            <strong>Correo:</strong><br>
                             <a href="mailto:<?php echo $contact_email; ?>"><span><?php echo $contact_email; ?></span></a>
                         </address>
                     </div>
                 </div>
 
-                <h3>Find Us On Map</h3>
-                <?php echo $contact_map_iframe; ?>
+                <h3>Encuentranos en el mapa</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.857272510461!2d-99.14870332493672!3d19.504775481790176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f94c06d75fd7%3A0x3fe1567da2190ac9!2sESCOM%20-%20Escuela%20Superior%20de%20C%C3%B3mputo%20-%20IPN!5e0!3m2!1ses-419!2smx!4v1719448238101!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
                 
             </div>
         </div>

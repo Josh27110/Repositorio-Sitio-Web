@@ -1,4 +1,5 @@
 <!-- This is main configuration File -->
+ <!-- PRUEBA -->
 <?php
 ob_start();
 session_start();
@@ -302,7 +303,7 @@ foreach ($result as $row) {
 
 					<li><a href="cart.php"><i class="fa fa-shopping-cart"></i> <?php echo LANG_VALUE_18; ?> (<?php echo LANG_VALUE_1; ?><?php
 					if(isset($_SESSION['cart_p_id'])) {
-						$table_total_price = 0;
+						$table_total_price = 10000;
 						$i=0;
 	                    foreach($_SESSION['cart_p_qty'] as $key => $value) 
 	                    {
@@ -316,11 +317,11 @@ foreach ($result as $row) {
 	                    }
 	                    for($i=1;$i<=count($arr_cart_p_qty);$i++) {
 	                    	$row_total_price = $arr_cart_p_current_price[$i]*$arr_cart_p_qty[$i];
-	                        $table_total_price = $table_total_price + $row_total_price;
+	                        $table_total_price = $table_total_price - $row_total_price;
 	                    }
 						echo $table_total_price;
 					} else {
-						echo '0.00';
+						echo '10,000.00';
 					}
 					?>)</a></li>
 				</ul>

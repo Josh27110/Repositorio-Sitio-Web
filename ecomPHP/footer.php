@@ -73,10 +73,10 @@ foreach ($result as $row)
 							$verification_url = BASE_URL.'verify.php?email='.$to.'&key='.$key;
 
 							$message = '
-Thanks for your interest to subscribe our newsletter!<br><br>
-Please click this link to confirm your subscription:
+¡Gracias por su interés en suscribirse a nuestro boletín!<br><br>
+Por favor haga clic en este enlace para confirmar su suscripción:
 					'.$verification_url.'<br><br>
-This link will be active only for 24 hours.
+Este enlace sólo estará activo durante 24 horas.
 					';
 
 							$headers = 'From: ' . $contact_email . "\r\n" .
@@ -161,7 +161,7 @@ foreach ($result as $row) {
 <script>
 	function confirmDelete()
 	{
-	    return confirm("Sure you want to delete this data?");
+	    return confirm("¿Seguro que quieres eliminar estos datos?");
 	}
 	$(document).ready(function () {
 		advFieldsStatus = $('#advFieldsStatus').val();
